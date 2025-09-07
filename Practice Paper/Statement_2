@@ -1,0 +1,103 @@
+#include <iostream>
+#include <fstream>
+#include <vector>
+#include <stdexcept>
+using namespace std;
+
+class Student {
+    int rollNo;
+    string name;
+    int marks[3];
+
+public:
+    Student(int r = 0, string n = "", int m1 = 0, int m2 = 0, int m3 = 0) {
+        if (m1 < 0 || m1 > 100 || m2 < 0 || m2 > 100 || m3 < 0 || m3 > 100)
+            throw invalid_argument("Marks must be between 0 and 100");
+        rollNo = r; name = n;
+        marks[0] = m1; marks[1] = m2; marks[2] = m3;
+    }
+
+    int getRoll() const { return rollNo; }
+    string getName() const { return name; }
+
+    double average() const {
+        return (marks[0] + marks[1] + marks[2]) / 3.0;
+    }
+
+    // Overload ++ (bonus marks for each subject)
+    Student& operator++() {
+        for (int i = 0; i < 3; i++) {
+            if (marks[i] < 100) marks[i]++;
+        }
+        return *this;
+    }
+
+    // Compare students by average
+    bool operator>(const Student& s) const {
+        return this->average() > s.average();
+    }
+
+    void display() const {
+        cout << "Roll: " << rollNo << " | Name: " << name
+             << " | Marks: " << marks[0] << "," << marks[1] << "," << marks[2]
+             << " | Avg: " << average() << "\n";
+    }
+
+    void saveToFile() const {
+        ofstream fout("gradebook.txt", ios::app);
+        fout << rollNo << "," << name << "," << marks[0] << "," << marks[1] << "," << marks[2] << "\n";
+        fout.close();
+    }
+};
+
+class Gradebook {
+    vector<Student> students;
+
+public:
+    void addStudent(const Student& s) {
+        for (auto& st : students) {
+            if (st.getRoll() == s.getRoll())
+                throw runtime_error("Duplicate roll number!");
+        }
+        students.push_back(s);
+    }
+
+    void displayAll() {
+        if (students.empty()) throw runtime_error("Gradebook is empty!");
+        for (auto& s : students) s.display();
+    }
+
+    void saveAll() {
+        for (auto& s : students) s.saveToFile();
+    }
+};
+
+int main() {
+    try {
+        cout << "Previous Records:\n";
+        ifstream fin("gradebook.txt");
+        if (fin) {
+            string line;
+            while (getline(fin, line)) cout << line << endl;
+        }
+        fin.close();
+        cout << "----------------------\n";
+
+        Gradebook gb;
+        Student s1(1, "Amol", 90, 85, 88);
+        Student s2(2, "Rahul", 78, 82, 80);
+
+        gb.addStudent(s1);
+        gb.addStudent(s2);
+
+        cout << "Before Bonus:\n"; gb.displayAll();
+        ++s1;
+        cout << "After Bonus to Amol:\n"; s1.display();
+
+        gb.saveAll();
+
+    } catch (exception& e) {
+        cout << "Error: " << e.what() << endl;
+    }
+    return 0;
+}
