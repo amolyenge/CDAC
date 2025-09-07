@@ -1,0 +1,113 @@
+#include <iostream>
+#include <fstream>
+#include <vector>
+#include <stdexcept>
+using namespace std;
+
+class Item {
+    int itemID;
+    string itemName;
+    double price;
+    int stockQuantity;
+
+public:
+    Item(int id = 0, string name = "", double p = 0.0, int qty = 0) {
+        if (p < 0 || qty < 0)
+            throw invalid_argument("Price/Quantity cannot be negative");
+        itemID = id; itemName = name; price = p; stockQuantity = qty;
+    }
+
+    int getID() const { return itemID; }
+    string getName() const { return itemName; }
+    double getPrice() const { return price; }
+    int getStock() const { return stockQuantity; }
+
+    void reduceStock(int qty) {
+        if (qty > stockQuantity)
+            throw runtime_error("Not enough stock available");
+        stockQuantity -= qty;
+    }
+
+    friend ostream& operator<<(ostream& os, const Item& it) {
+        os << "ID: " << it.itemID << " | " << it.itemName
+           << " | Price: " << it.price << " | Stock: " << it.stockQuantity;
+        return os;
+    }
+};
+
+class Bill {
+    int billID;
+    string customerName;
+    vector<Item> purchasedItems;
+
+public:
+    Bill(int id, string name) : billID(id), customerName(name) {}
+
+    // Overload + to add item to bill
+    Bill& operator+(Item& it) {
+        if (it.getStock() <= 0)
+            throw runtime_error("Item out of stock!");
+        it.reduceStock(1);   // buying 1 piece
+        purchasedItems.push_back(it);
+        return *this;
+    }
+
+    // Display bill
+    friend ostream& operator<<(ostream& os, const Bill& b) {
+        if (b.purchasedItems.empty())
+            throw runtime_error("Bill is empty!");
+        os << "Bill ID: " << b.billID << "\nCustomer: " << b.customerName << "\nItems:\n";
+        double total = 0;
+        for (auto& it : b.purchasedItems) {
+            os << it.getName() << " - Rs." << it.getPrice() << "\n";
+            total += it.getPrice();
+        }
+        os << "Total Amount: Rs." << total << "\n";
+        return os;
+    }
+
+    void saveToFile() {
+        ofstream fout("bills.txt", ios::app);
+        fout << "Bill ID: " << billID << ", Customer: " << customerName << "\n";
+        double total = 0;
+        for (auto& it : purchasedItems) {
+            fout << it.getName() << " - Rs." << it.getPrice() << "\n";
+            total += it.getPrice();
+        }
+        fout << "Total: Rs." << total << "\n\n";
+        fout.close();
+    }
+};
+
+int main() {
+    try {
+        // Load previous bills (just display contents)
+        ifstream fin("bills.txt");
+        if (fin) {
+            cout << "Previous Bills:\n";
+            string line;
+            while (getline(fin, line)) cout << line << endl;
+            cout << "----------------------\n";
+        }
+        fin.close();
+
+        // Create items
+        Item laptop(1, "Laptop", 55000, 5);
+        Item mouse(2, "Mouse", 800, 10);
+        Item keyboard(3, "Keyboard", 1200, 8);
+
+        cout << laptop << "\n" << mouse << "\n" << keyboard << "\n\n";
+
+        // Create Bill
+        Bill b1(101, "Amol");
+        b1 + laptop;   // add laptop
+        b1 + mouse;    // add mouse
+
+        cout << b1;
+        b1.saveToFile();
+
+    } catch (exception& e) {
+        cout << "Error: " << e.what() << endl;
+    }
+    return 0;
+}
