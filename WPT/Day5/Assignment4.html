@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Operations</title>
+</head>
+<body>
+
+    <h2>Array Operations</h2>
+
+    <input type="number" id="numInput" placeholder="Enter a number" />
+
+    <br>
+
+    <button onclick="addAtEnd()">Add at End</button>
+    <button onclick="addAtStart()">Add at Start</button>
+    <button onclick="deleteFromEnd()">Delete from End</button>
+    <button onclick="deleteFromStart()">Delete from Start</button>
+    <button onclick="displayOdd()">Display Odd Numbers</button>
+    <button onclick="displayEven()">Display Even Numbers</button>
+
+    <div id="output"></div>
+
+    <script>
+        let numbers = [];
+
+        function updateOutput(msg) {
+            document.getElementById('output').innerText = msg + '\nCurrent Array: [' + numbers + ']';
+        }
+
+        function getInputValue() {
+            return document.getElementById('numInput').value;
+        }
+
+        function addAtEnd() {
+            let value = getInputValue();
+            if (value === '') return alert('Please enter a number.');
+            numbers.push(value);
+            updateOutput('Added at end.');
+        }
+
+        function addAtStart() {
+            let value = getInputValue();
+            if (value === '') return alert('Please enter a number.');
+            numbers.unshift(value);
+            updateOutput('Added at start.');
+        }
+
+        function deleteFromEnd() {
+            if (numbers.length === 0) return updateOutput('Array is already empty.');
+            numbers.pop();
+            updateOutput('Deleted from end.');
+        }
+
+        function deleteFromStart() {
+            if (numbers.length === 0) return updateOutput('Array is already empty.');
+            numbers.shift();
+            updateOutput('Deleted from start.');
+        }
+
+        function displayOdd() {
+            let odds = numbers.filter(n => n % 2 !== 0);
+            updateOutput('Odd Numbers: ' + odds);
+        }
+
+        function displayEven() {
+            let evens = numbers.filter(n => n % 2 === 0);
+            updateOutput('Even Numbers: ' + evens);
+        }
+    </script>
+
+</body>
+</html>

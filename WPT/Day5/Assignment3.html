@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Validation</title>
+        <style>
+        .errormessage
+        {
+            visibility: hidden;
+        }
+    </style>
+</head>
+    <body>
+        <form name="form1" onsubmit="return validate()">
+            Student Name :<input type="text" name="studName" />
+            <p class="errormessage">Name must be given</p>
+            <br>
+            Student Age :<input type="text" name="studAge" />
+            <p class="errormessage">age must be more than 10</p>
+            <br>
+            <input type="submit"  value="Submit"> </input><br>
+        </form>
+
+    <script>
+        function validate()
+        {
+            var name = document.forms["form1"]["studName"].value
+            var age = document.forms["form1"]["studAge"].value
+
+            if(name.trim()=="")
+            {
+               document.getElementsByClassName("errormessage")[0].style.visibility = 'visible'
+            }
+            else
+               document.getElementsByClassName("errormessage")[0].style.visibility = 'hidden'
+
+               
+            if(age<10){
+              document.getElementsByClassName("errormessage")[1].style.visibility = 'visible'
+                return false;
+            }
+            else
+            {
+                document.getElementsByClassName("errormessage")[1].style.visibility = 'hidden'
+                document.forms["form1"].action="page.html"
+                return true;
+            } 
+
+        }
+
+        function do2()
+        {
+            document.forms["form1"].action="g.html"
+                document.forms["form1"].submit()
+            
+        }
+    </script>
+    </body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Employee Data Form</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  .error {
+    color: red;
+    margin-bottom: 10px;
+  }
+  table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 600px;
+  }
+  th, td {
+    border: 1px solid #333;
+    padding: 8px 12px;
+    text-align: center;
+  }
+  th {
+    background-color: #eee;
+  }
+</style>
+</head>
+
+<body>
+<h2>Enter Employee Data</h2>
+
+<form id="employeeForm">
+  <div>
+    <label for="firstName">First Name: </label>
+    <input type="text" id="firstName" name="firstName" />
+  </div>
+  <div>
+    <label for="lastName">Last Name: </label>
+    <input type="text" id="lastName" name="lastName" />
+  </div>
+  <div>
+    <label for="email">Email: </label>
+    <input type="email" id="email" name="email" />
+  </div>
+  <div>
+    <label for="dob">Date of Birth: </label>
+    <input type="date" id="dob" name="dob" />
+  </div>
+  <br />
+  <button type="submit">Submit</button>
+</form>
+
+<div id="errorMessages" class="error"></div>
+
+<div id="result"></div>
+
+<script>
+  const form = document.getElementById('employeeForm');
+  const errorDiv = document.getElementById('errorMessages');
+  const resultDiv = document.getElementById('result');
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    errorDiv.textContent = '';
+    resultDiv.innerHTML = '';
+
+    const firstName = form.firstName.value.trim();
+    const lastName = form.lastName.value.trim();
+    const email = form.email.value.trim();
+    const dob = form.dob.value;
+
+    let errors = [];
+
+    if (!firstName) errors.push("First Name is required.");
+    if (!lastName) errors.push("Last Name is required.");
+    if (!email) errors.push("Email is required.");
+    if (!dob) errors.push("Date of Birth is required.");
+
+    if (errors.length > 0) {
+      errorDiv.innerHTML = errors.join('<br>');
+      return;
+    }
+    const tableHTML = `
+      <h3>Employee Data</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>First Name</th><th>Last Name</th><th>Email</th><th>Date of Birth</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>${firstName}</td><td>${lastName}</td><td>${email}</td><td>${dob}</td>
+          </tr>
+        </tbody>
+      </table>
+    `;
+
+    resultDiv.innerHTML = tableHTML;
+    form.reset();
+  });
+</script>
+
+</body>
+</html>
