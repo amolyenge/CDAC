@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Click Counter</title>
+  <style>
+    .readonly {
+      pointer-events: none;
+      background-color: #ccc;
+      color: #666;
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="clickBtn">Click Me</button>
+  <p>You clicked <span id="count">0</span> times.</p>
+
+  <script>
+    let count = 0;
+    const button = document.getElementById("clickBtn");
+    const countDisplay = document.getElementById("count");
+
+    button.addEventListener("click", function() {
+      count++;
+      countDisplay.textContent = count;
+
+      if (count >= 10) {
+        button.classList.add("readonly");
+      }
+    });
+  </script>
+
+</body>
+</html>

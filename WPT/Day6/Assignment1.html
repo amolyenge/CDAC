@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Data Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        table, th, td {
+            border: 1px solid #000;
+            border-collapse: collapse;
+            padding: 8px;
+        }
+        table {
+            margin-top: 20px;
+            width: 100%;
+        }
+        input {
+            margin: 5px 0;
+            padding: 5px;
+            width: 300px;
+        }
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Enter Employee Data</h2>
+    <div id="form">
+        <label>First Name:</label><br>
+        <input type="text" id="firstName"><br>
+
+        <label>Last Name:</label><br>
+        <input type="text" id="lastName"><br>
+
+        <label>Email:</label><br>
+        <input type="email" id="email"><br>
+
+        <label>Date of Birth:</label><br>
+        <input type="date" id="dob"><br><br>
+
+        <button onclick="addEmployee()">Add Employee</button>
+
+        <div class="error" id="errorMsg"></div>
+    </div>
+
+    <table id="employeeTable">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Date of Birth</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Employee rows go here -->
+        </tbody>
+    </table>
+
+    <script>
+        function addEmployee() {
+            const firstName = document.getElementById('firstName').value.trim();
+            const lastName = document.getElementById('lastName').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const dob = document.getElementById('dob').value;
+
+            const errorMsg = document.getElementById('errorMsg');
+
+            // Validation
+            if (!firstName || !lastName || !email || !dob) {
+                errorMsg.textContent = "All fields are required.";
+                return;
+            }
+
+            errorMsg.textContent = ""; // Clear error message
+
+            // Create table row
+            const table = document.getElementById('employeeTable').getElementsByTagName('tbody')[0];
+            const newRow = table.insertRow();
+
+            newRow.insertCell(0).textContent = firstName;
+            newRow.insertCell(1).textContent = lastName;
+            newRow.insertCell(2).textContent = email;
+            newRow.insertCell(3).textContent = dob;
+
+            // Actions Cell
+            const actionsCell = newRow.insertCell(4);
+            const editBtn = document.createElement('button');
+            editBtn.textContent = "Edit";
+            editBtn.onclick = function() {
+                editRow(newRow);
+            };
+
+            const deleteBtn = document.createElement('button');
+            deleteBtn.textContent = "Delete";
+            deleteBtn.style.marginLeft = "10px";
+            deleteBtn.onclick = function() {
+                deleteRow(newRow);
+            };
+
+            actionsCell.appendChild(editBtn);
+            actionsCell.appendChild(deleteBtn);
+
+            // Clear input fields
+            document.getElementById('firstName').value = '';
+            document.getElementById('lastName').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('dob').value = '';
+        }
+
+        function deleteRow(row) {
+            row.remove();
+        }
+
+        function editRow(row) {
+            const currentFirstName = row.cells[0].textContent;
+            const currentLastName = row.cells[1].textContent;
+            const currentEmail = row.cells[2].textContent;
+            const currentDOB = row.cells[3].textContent;
+
+            const newFirstName = prompt("Edit First Name:", currentFirstName);
+            if (newFirstName === null) return;
+
+            const newLastName = prompt("Edit Last Name:", currentLastName);
+            if (newLastName === null) return;
+
+            const newEmail = prompt("Edit Email:", currentEmail);
+            if (newEmail === null) return;
+
+            const newDOB = prompt("Edit Date of Birth (YYYY-MM-DD):", currentDOB);
+            if (newDOB === null) return;
+
+            // Update row
+            row.cells[0].textContent = newFirstName.trim();
+            row.cells[1].textContent = newLastName.trim();
+            row.cells[2].textContent = newEmail.trim();
+            row.cells[3].textContent = newDOB.trim();
+        }
+    </script>
+
+</body>
+</html>

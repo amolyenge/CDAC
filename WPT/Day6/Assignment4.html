@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator with Callback Functions</title>
+</head>
+<body>
+    <h2>Simple Calculator</h2>
+
+    <label for="num1">Enter First Number:</label>
+    <input type="number" id="num1" /><br><br>
+
+    <label for="num2">Enter Second Number:</label>
+    <input type="number" id="num2" /><br><br>
+
+    <label for="operation">Select Operation:</label>
+    <select id="operation">
+        <option value="add">Addition</option>
+        <option value="sub">Subtraction</option>
+        <option value="mul">Multiplication</option>
+        <option value="div">Division</option>
+    </select><br><br>
+
+    <button onclick="performCalculation()">Calculate</button>
+
+    <h3 id="result">Result: </h3>
+
+    <script>
+        // Display function
+        function display(result) {
+            document.getElementById("result").innerText = "Result: " + result;
+        }
+
+        // Addition
+        function addition(n1, n2, callback) {
+            let result = n1 + n2;
+            callback(result);
+        }
+
+        // Subtraction
+        function subtraction(n1, n2, callback) {
+            let result = n1 - n2;
+            callback(result);
+        }
+
+        // Multiplication
+        function multiply(n1, n2, callback) {
+            let result = n1 * n2;
+            callback(result);
+        }
+
+        // Division
+        function division(n1, n2, callback) {
+            if (n2 === 0) {
+                callback("Error: Division by zero");
+            } else {
+                let result = n1 / n2;
+                callback(result);
+            }
+        }
+
+        // Calculate using callback
+        function calculate(n1, n2, operationCallback) {
+            operationCallback(n1, n2, display);
+        }
+
+        // Main function to trigger on button click
+        function performCalculation() {
+            let num1 = parseFloat(document.getElementById("num1").value);
+            let num2 = parseFloat(document.getElementById("num2").value);
+            let operation = document.getElementById("operation").value;
+
+            if (isNaN(num1) || isNaN(num2)) {
+                display("Please enter valid numbers.");
+                return;
+            }
+
+            switch (operation) {
+                case "add":
+                    calculate(num1, num2, addition);
+                    break;
+                case "sub":
+                    calculate(num1, num2, subtraction);
+                    break;
+                case "mul":
+                    calculate(num1, num2, multiply);
+                    break;
+                case "div":
+                    calculate(num1, num2, division);
+                    break;
+                default:
+                    display("Invalid operation selected.");
+            }
+        }
+    </script>
+</body>
+</html>

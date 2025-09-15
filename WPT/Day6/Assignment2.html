@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Timer Example</title>
+  <style>
+    #timer {
+      font-size: 2em;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Simple Timer</h1>
+  <div id="timer">0</div>
+
+  <script>
+    let seconds = 0;
+
+    function updateTimer() {
+      seconds++;
+      document.getElementById('timer').textContent = seconds;
+    }
+
+    setInterval(updateTimer, 1000);
+  </script>
+
+</body>
+</html>
