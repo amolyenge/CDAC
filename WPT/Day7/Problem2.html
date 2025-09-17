@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crossing Boxes</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .corner-box {
+            position: absolute;
+            top: 0;
+            width: 100px;
+            height: 100px;
+
+        }
+
+        #box1 {
+            left: 0;
+            background-color: crimson;
+        }
+
+        #box2 {
+            right: 0;
+            background-color: royalblue;
+        }
+
+        @keyframes crossLeftToRight {
+            0% {
+                left: 0;
+            }
+
+            100% {
+                left: calc(100% - 100px);
+            }
+        }
+
+        @keyframes crossRightToLeft {
+            0% {
+                right: 0;
+            }
+
+            100% {
+                right: calc(100% - 100px);
+            }
+        }
+
+        .animate-left {
+            animation: crossLeftToRight 2s forwards;
+        }
+
+        .animate-right {
+            animation: crossRightToLeft 2s forwards;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="box1" class="corner-box"></div>
+    <div id="box2" class="corner-box"></div>
+
+    <script>
+        function animateBoxes() {
+            document.getElementById('box1').classList.add('animate-left');
+            document.getElementById('box2').classList.add('animate-right');
+        }
+
+        // Trigger animation after 1 second
+        setTimeout(animateBoxes, 1000);
+    </script>
+
+</body>
+
+</html>

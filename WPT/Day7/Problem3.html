@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Form</title>
+</head>
+<body>
+
+  <h3>User Information</h3>
+  <input id="firstName" placeholder="First Name">
+  <input id="lastName" placeholder="Last Name">
+  <input id="age" type="number" placeholder="Age">
+  <button onclick="submitData()">Submit</button>
+  <button onclick="resetForm()">Reset</button>
+
+  <h4>JSON Output:</h4>
+  <pre id="jsonDisplay"></pre>
+
+  <h4>Table Output:</h4>
+  <table border="1">
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Age</th>
+    </tr>
+    <tbody id="tableBody"></tbody>
+  </table>
+
+  <script>
+    let storedData = []; // Array to hold multiple entries
+
+    function submitData() {
+      const firstName = document.getElementById('firstName').value;
+      const lastName = document.getElementById('lastName').value;
+      const age = document.getElementById('age').value;
+
+      const user = { firstName, lastName, age };
+      storedData.push(user); // Save to array
+
+      // Show JSON
+      document.getElementById('jsonDisplay').textContent = JSON.stringify(storedData, null, 2);
+
+      // Add to table
+      const row = `<tr>
+        <td>${user.firstName}</td>
+        <td>${user.lastName}</td>
+        <td>${user.age}</td>
+      </tr>`;
+      document.getElementById('tableBody').innerHTML += row;
+
+      // Clear input fields
+      document.getElementById('firstName').value = '';
+      document.getElementById('lastName').value = '';
+      document.getElementById('age').value = '';
+    }
+
+    function resetForm() {
+      // Clear input fields
+      document.getElementById('firstName').value = '';
+      document.getElementById('lastName').value = '';
+      document.getElementById('age').value = '';
+
+      // Clear stored data
+      storedData = [];
+
+      // Clear JSON and table
+      document.getElementById('jsonDisplay').textContent = '';
+      document.getElementById('tableBody').innerHTML = '';
+    }
+  </script>
+
+</body>
+</html>
