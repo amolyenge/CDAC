@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TimerExample</title>
+
+    <style>
+        body {
+            font-family: Algerian, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        h3 {
+            color: black;
+        }
+
+        #timer {
+            font-size: 48px;
+            margin: 20px 0;
+            font-weight: bold;
+            color: lightseagreen;
+        }
+
+        button {
+            background-color: darkturquoise;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: black;
+        }
+
+        button:active {
+            background-color: #003d80;
+        }
+
+        button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h3>TIMER</h3>
+    <div id="timer">0</div>
+
+    <button id="start">START</button>
+    <button id="stop">STOP</button>
+    <button id="reset">RESET</button>
+
+    <script>
+        let seconds = 0;
+        let intervalId = null;
+
+        function updateTimer() {
+            seconds++;
+            document.getElementById('timer').textContent = seconds;
+        }
+
+        document.getElementById('start').onclick = function () {
+            if (intervalId) return;
+            intervalId = setInterval(updateTimer, 1000);
+        };
+
+        document.getElementById('stop').onclick = function () {
+            if (intervalId) {
+                clearInterval(intervalId);
+                intervalId = null;
+            }
+        };
+
+        document.getElementById('reset').onclick = function () {
+            clearInterval(intervalId);
+            intervalId = null;
+            seconds = 0;
+            document.getElementById('timer').textContent = seconds;
+        };
+
+
+        setTimeout(() => {
+            alert("5 seconds passed");
+        }, 5000);
+    </script>
+</body>
+
+</html>
