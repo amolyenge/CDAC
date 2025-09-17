@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiplication Table Generator</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        table, th, td {
+            border: 1px solid black;
+            padding: 8px 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Multiplication Table Generator</h3>
+
+    <label>Number:</label>
+    <input type="number" id="num" placeholder="e.g. 5"><br><br>
+
+    <label>From:</label>
+    <input type="number" id="from" placeholder="e.g. 1"><br><br>
+
+    <label>To:</label>
+    <input type="number" id="to" placeholder="e.g. 5"><br><br>
+
+    <button id="showBtn">Show Table</button>
+
+    <div id="tableResult"></div>
+
+    <script>
+        $('#showBtn').on('click', function () {
+            let num = parseInt($('#num').val());
+            let from = parseInt($('#from').val());
+            let to = parseInt($('#to').val());
+
+            if (isNaN(num) || isNaN(from) || isNaN(to) || from > to) {
+                $('#tableResult').html("<p>Please enter valid numbers. 'From' should be less than or equal to 'To'.</p>");
+                return;
+            }
+
+            let tableHTML = "<table><tr><th>Expression</th><th>Result</th></tr>";
+
+            for (let i = from; i <= to; i++) {
+                tableHTML += `<tr><td>${num} * ${i}</td><td>${num * i}</td></tr>`;
+            }
+
+            tableHTML += "</table>";
+
+            $('#tableResult').html(tableHTML);
+        });
+    </script>
+
+</body>
+</html>

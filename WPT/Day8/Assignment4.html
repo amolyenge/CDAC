@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scrolling Quote</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+            background-color: #f9f9f9;
+        }
+
+        #scrollContainer {
+            position: relative;
+            width: 100%;
+            height: 60px;
+            overflow: hidden;
+            border: 2px solid #ccc;
+            background: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        #quote {
+            position: absolute;
+            white-space: nowrap;
+            font-size: 24px;
+            color: #dd1b1b;
+            font-family: 'Georgia', serif;
+            font-style: italic;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #73e0a4;
+            color: rgb(12, 12, 12);
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #357ABD;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="scrollContainer">
+        <div id="quote">“The Success wants Hard Work and Dedication”</div>
+    </div>
+
+    <button id="startBtn">Start Scroll</button>
+
+    <script>
+        $('#startBtn').on('click', function () {
+            let $quote = $('#quote');
+            let $container = $('#scrollContainer');
+            let containerWidth = $container.width();
+            let quoteWidth = $quote.outerWidth();
+            let distance = containerWidth - quoteWidth;
+
+            // Reset position to left
+            $quote.css({ left: 0 });
+
+            // Animate L -> R 4 times
+            let count = 0;
+            function animateLTR() {
+                $quote.animate({ left: distance }, 1000, function () {
+                    $quote.animate({ left: 0 }, 1000, function () {
+                        count++;
+                        if (count < 4) {
+                            animateLTR(); // Repeat 4 times
+                        } else {
+                            animateRTL(); // Then do R -> L
+                        }
+                    });
+                });
+            }
+
+            function animateRTL() {
+                $quote.css({ left: distance }); // Move to right edge instantly
+                $quote.animate({ left: 0 }, 1000); // Animate back to left
+            }
+
+            animateLTR();
+        });
+    </script>
+
+</body>
+</html>

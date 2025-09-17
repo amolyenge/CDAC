@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery slideDown and slideUp Demo</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        #contentBox {
+            display: none;
+            width: 300px;
+            padding: 20px;
+            background-color: #d9edf7;
+            border: 1px solid #f80707;
+            color: #e76107;
+            font-family: Arial, sans-serif;
+            margin-top: 20px;
+        }
+
+        button {
+            margin-right: 10px;
+            padding: 8px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="showBtn">Slide Down</button>
+    <button id="hideBtn">Slide Up</button>
+
+    <div id="contentBox">
+        <h3>Hello My Name is Amol</h3>
+        <p>I Love Outdoor sports.</p>
+    </div>
+
+    <script>
+        $('#showBtn').on('click', function() {
+            $('#contentBox').slideDown(600);
+        });
+
+        $('#hideBtn').on('click', function() {
+            $('#contentBox').slideUp(600);
+        });
+    </script>
+
+</body>
+</html>
