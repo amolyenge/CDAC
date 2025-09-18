@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Try Catch Finally in JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .error {
+            color: red;
+        }
+        input, button {
+            margin-top: 5px;
+            padding: 8px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Form with Try-Catch-Finally</h2>
+
+    <form id="myForm" onsubmit="return handleForm()">
+        <label for="title">Enter Title (5-20 chars):</label>
+        <input type="text" id="title" name="title" placeholder="Title here" />
+        <div id="message" class="error"></div>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        function handleForm() {
+            const titleInput = document.getElementById('title');
+            const messageDiv = document.getElementById('message');
+            messageDiv.textContent = ''; // Clear previous messages
+
+            try {
+                let value = titleInput.value.trim();
+
+                if (!value) {
+                    throw new Error("Title is required.");
+                }
+
+                if (value.length < 5) {
+                    throw new Error("Title must be at least 5 characters.");
+                }
+
+                if (value.length > 20) {
+                    throw new Error("Title must be at most 20 characters.");
+                }
+
+                alert("Form submitted successfully!");
+                return true; // Allow form to submit
+            } catch (error) {
+                messageDiv.textContent = error.message;
+                return false; // Prevent form submission
+            } finally {
+                console.log("Validation attempted.");
+            }
+        }
+    </script>
+
+</body>
+</html>

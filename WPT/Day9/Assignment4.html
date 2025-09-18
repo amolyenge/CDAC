@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Form Validation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .error {
+            color: red;
+            font-size: 0.9em;
+        }
+
+        input, button {
+            padding: 8px;
+            margin-top: 5px;
+            display: block;
+        }
+
+        form {
+            max-width: 300px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Form with HTML Validation</h2>
+
+    <form id="myForm" onsubmit="return validateForm()">
+        <label for="title">Enter Title:</label>
+        <input type="text" id="title" name="title" 
+               required 
+               minlength="5" 
+               maxlength="20" 
+               placeholder="Enter title (5-20 chars)" />
+
+        <div id="error-msg" class="error"></div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        function validateForm() {
+            const titleInput = document.getElementById('title');
+            const errorDiv = document.getElementById('error-msg');
+
+            // Clear previous error
+            errorDiv.textContent = '';
+
+            // Check validity using built-in API
+            if (!titleInput.checkValidity()) {
+                if (titleInput.validity.valueMissing) {
+                    errorDiv.textContent = 'Title is required.';
+                } else if (titleInput.validity.tooShort) {
+                    errorDiv.textContent = 'Title must be at least 5 characters.';
+                } else if (titleInput.validity.tooLong) {
+                    errorDiv.textContent = 'Title must be at most 20 characters.';
+                }
+
+                return false; // Prevent form submission
+            }
+
+            alert('Form submitted successfully!');
+            return true;
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .calculator {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      width: 280px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 15px;
+      font-size: 18px;
+      margin-bottom: 15px;
+      text-align: right;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    .buttons button {
+      padding: 15px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .buttons button.operator {
+      background: #ff9800;
+      color: white;
+    }
+
+    .buttons button.equal {
+      background: #4caf50;
+      color: white;
+    }
+
+    .buttons button.clear {
+      background: #f44336;
+      color: white;
+    }
+
+    .buttons button:hover {
+      opacity: 0.8;
+    }
+
+    .error {
+      color: red;
+      margin-top: 10px;
+      font-size: 0.9em;
+    }
+
+    .highlight {
+      border: 2px solid green !important;
+    }
+  </style>
+</head>
+<body>
+
+<div class="calculator">
+  <input type="text" id="display" placeholder="0" required minlength="1" maxlength="20" />
+  <div class="error" id="errorMsg"></div>
+
+  <div class="buttons">
+    <!-- First Row -->
+    <button onclick="appendValue('7')">7</button>
+    <button onclick="appendValue('8')">8</button>
+    <button onclick="appendValue('9')">9</button>
+    <button class="operator" onclick="appendValue('/')">/</button>
+
+    <!-- Second Row -->
+    <button onclick="appendValue('4')">4</button>
+    <button onclick="appendValue('5')">5</button>
+    <button onclick="appendValue('6')">6</button>
+    <button class="operator" onclick="appendValue('*')">*</button>
+
+    <!-- Third Row -->
+    <button onclick="appendValue('1')">1</button>
+    <button onclick="appendValue('2')">2</button>
+    <button onclick="appendValue('3')">3</button>
+    <button class="operator" onclick="appendValue('-')">-</button>
+
+    <!-- Fourth Row -->
+    <button onclick="appendValue('0')">0</button>
+    <button onclick="appendValue('.')">.</button>
+    <button class="equal" onclick="calculate()">=</button>
+    <button class="operator" onclick="appendValue('+')">+</button>
+
+    <!-- Fifth Row -->
+    <button class="clear" onclick="clearDisplay()">C</button>
+    <button onclick="deleteLast()">DEL</button>
+    <button onclick="toggleHighlight()">Highlight</button>
+    <button onclick="alertHelp()">Help</button>
+  </div>
+</div>
+
+<!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+  const display = $('#display');
+  const errorMsg = $('#errorMsg');
+
+  function appendValue(value) {
+    errorMsg.text('');
+    display.val(display.val() + value);
+  }
+
+  function clearDisplay() {
+    display.val('');
+    errorMsg.text('');
+  }
+
+  function deleteLast() {
+    let current = display.val();
+    display.val(current.slice(0, -1));
+  }
+
+  function calculate() {
+    const expression = display.val().trim();
+
+    try {
+      if (!expression) {
+        throw new Error("Input is empty.");
+      }
+
+      const result = eval(expression); // ⚠️ Use eval carefully
+      if (isNaN(result)) {
+        throw new Error("Invalid calculation.");
+      }
+
+      display.val(result);
+    } catch (error) {
+      errorMsg.text(error.message);
+    } finally {
+      console.log("Calculation attempted.");
+    }
+  }
+
+  function toggleHighlight() {
+    display.toggleClass('highlight');
+  }
+
+  function alertHelp() {
+    alert("Calculator built with HTML, CSS, JavaScript, and jQuery!");
+  }
+</script>
+
+</body>
+</html>

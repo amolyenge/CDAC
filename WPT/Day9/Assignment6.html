@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS with JavaScript classList</title>
+  <style>
+    .highlight {
+      background-color: yellow;
+      color: black;
+      padding: 10px;
+      border: 2px solid orange;
+    }
+
+    .box {
+      margin: 20px 0;
+      padding: 15px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      margin-right: 10px;
+      padding: 8px 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Apply CSS using JavaScript Methods</h2>
+
+  <div id="myBox" class="box">
+    This is a box. Use the buttons below to apply/remove CSS.
+  </div>
+
+  <button onclick="addClass()">Add Class</button>
+  <button onclick="removeClass()">Remove Class</button>
+  <button onclick="toggleClass()">Toggle Class</button>
+
+  <script>
+    const box = document.getElementById('myBox');
+
+    function addClass() {
+      box.classList.add('highlight');
+    }
+
+    function removeClass() {
+      box.classList.remove('highlight');
+    }
+
+    function toggleClass() {
+      box.classList.toggle('highlight');
+    }
+  </script>
+
+</body>
+</html>

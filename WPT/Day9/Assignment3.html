@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fetch Post by ID</title>
+    <style>
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #444;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f0f0f0;
+        }
+        input {
+            padding: 6px;
+            width: 80px;
+        }
+        button {
+            padding: 6px 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Fetch Post by ID (AJAX)</h2>
+
+    <label for="postId">Enter Post ID:</label>
+    <input type="number" id="postId" min="1" max="100" />
+    <button onclick="loadPostById()">Fetch Post</button>
+
+    <div id="output"></div>
+
+    <script>
+        function loadPostById() {
+            var id = document.getElementById('postId').value.trim();
+
+            if (id === '' || isNaN(id) || id < 1) {
+                document.getElementById('output').innerHTML = '<p style="color:red;">Please enter a valid ID (1-100)</p>';
+                return;
+            }
+
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'https://jsonplaceholder.typicode.com/posts/' + id, true);
+
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    var post = JSON.parse(xhr.responseText);
+
+                    if (!post.id) {
+                        document.getElementById('output').innerHTML = '<p>No post found with ID ' + id + '</p>';
+                        return;
+                    }
+
+                    var table = '<table>';
+                    table += '<tr><th>ID</th><th>Title</th></tr>';
+                    table += '<tr><td>' + post.id + '</td><td>' + post.title + '</td></tr>';
+                    table += '</table>';
+
+                    document.getElementById('output').innerHTML = table;
+                } else {
+                    document.getElementById('output').innerHTML = '<p>Error fetching post</p>';
+                }
+            };
+
+            xhr.onerror = function () {
+                document.getElementById('output').innerHTML = '<p>Network error occurred</p>';
+            };
+
+            xhr.send();
+        }
+    </script>
+
+</body>
+</html>

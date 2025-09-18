@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AJAX Fetch JSON Example</title>
+    <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Load Posts (AJAX from URL)</h2>
+    <button onclick="loadPosts()">Load Posts</button>
+
+    <div id="table-container"></div>
+
+    <script>
+        function loadPosts() {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'https://jsonplaceholder.typicode.com/posts', true);
+
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    var posts = JSON.parse(xhr.responseText);
+
+                    var output = '<table>';
+                    output += '<tr><th>ID</th><th>Title</th></tr>';
+
+                    posts.forEach(function(post) {
+                        output += '<tr><td>' + post.id + '</td><td>' + post.title + '</td></tr>';
+                    });
+
+                    output += '</table>';
+                    document.getElementById('table-container').innerHTML = output;
+                } else {
+                    document.getElementById('table-container').innerHTML = 'Failed to load data';
+                }
+            };
+
+            xhr.onerror = function () {
+                document.getElementById('table-container').innerHTML = 'Request error';
+            };
+
+            xhr.send();
+        }
+    </script>
+
+</body>
+</html>
