@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AJAX Load Text Example</title>
+</head>
+<body>
+    <h2>Load Data from Text File using AJAX</h2>
+
+    <button onclick="loadText()">Load Text File</button>
+
+    <div id="output" style="margin-top: 20px; font-weight: bold;"></div>
+
+    <script>
+        function loadText() {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'data.txt', true);
+
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    document.getElementById('output').innerText = xhr.responseText;
+                } else {
+                    document.getElementById('output').innerText = 'Error loading file';
+                }
+            };
+
+            xhr.onerror = function () {
+                document.getElementById('output').innerText = 'Request failed';
+            };
+
+            xhr.send();
+        }
+    </script>
+</body>
+</html>
