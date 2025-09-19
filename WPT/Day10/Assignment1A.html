@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQueryExample</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<h2>Content below will be loaded via AJAX:</h2>
+<div id="content"></div>
+
+<button id="loadBtn">Load Content</button>
+
+<script>
+    $("#loadBtn").click(function() {
+        $("#content").load("data.txt");
+    });
+</script>
+
+</body>
+</html>
