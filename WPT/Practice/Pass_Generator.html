@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+     <input type="text" id="fname" placeholder="Enter First Name"><br><br>
+     <input type="text" id="lname" placeholder="Enter Last Name"><br><br>
+     <input type="number" id="age" placeholder="Enter Age"><br><br>
+
+     <button id="btn" onclick="generateUserName()">Generate User Name</button><br><br>
+     <div id="output"></div>
+
+     <script>
+
+      function generateUserName(){
+         const f = document.getElementById("fname").value.trim();
+         const l = document.getElementById("lname").value.trim();
+         const a = document.getElementById("age").value.trim();
+       
+         if(f === "" || l === "" || a === ""){
+          alert("Enter All Fields..");
+         }
+
+         function getTwoCharacters(str){
+            if(str.length < 2) return str.toLowerCase();
+            let i1 = Math.floor(Math.random()*str.length);
+            let i2;
+            do{
+              i2 = Math.floor(Math.random()*str.length);
+            }while(i2 === i1);
+
+            return (str[i1] + str[i2]).toLowerCase();
+         }
+
+         const first = getTwoCharacters(f);
+         const second = getTwoCharacters(l);
+
+         const result = first + second + a;
+
+         const out = document.getElementById("output");
+         out.innerHTML = ` <b>UserName :</b> ${result} `
+      }
+
+     </script>
+</body>
+</html>
