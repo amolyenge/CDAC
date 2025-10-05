@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="fname" placeholder="First name"><br><br>
+    <input type="text" id="lname" placeholder="Last name"><br><br>
+    <input type="number" id="marks" placeholder="Enter Marks"><br><br>
+    <button id="btn" onclick="addData()">Add and Show Data</button><br><br>
+
+    <div id="output"></div>
+
+    <script>
+
+        const student = {
+            firstName :"",
+            lastName :"",
+            marks : 0
+        };
+
+        function addData(){
+           const f = document.getElementById("fname").value;
+           const l = document.getElementById("lname").value;
+           const m = document.getElementById("marks").value;
+
+           if(f === "" || l === "" || m === ""){
+              alert("Please Enter All Values")
+              return;
+           }
+
+           student.firstName = f;
+           student.lastName = l;
+           student.marks = parseInt(m);
+
+           const out = document.getElementById("output"); 
+           out.innerHTML =`<b>Student Data:</b><br>
+                First Name: ${student.firstName}<br>
+                Last Name: ${student.lastName}<br>
+                Marks: ${student.marks}`
+        }
+    </script>
+</body>
+</html>
