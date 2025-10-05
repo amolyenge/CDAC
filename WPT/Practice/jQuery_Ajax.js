@@ -34,3 +34,57 @@
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------
+// for all records
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <button id="bt1">Load Data</button>
+    <div id="output"></div>
+
+    <script>
+        $("#bt1").click(function(){
+            $.ajax({
+                url: "data.json",
+                method: "GET",
+                dataType: "json",
+                success: function(res){
+                    let html = "";
+                    res.forEach(item => {
+                        html +=`
+                        <h3>${item.name}</h3>
+                        <p>${item.age}</p>
+                        <p>${item.city}</p>
+                        <hr>                         
+                        `
+                    });
+                    $("#output").html(html);
+                },
+                error: function(err){
+                    console.error("Error fetching data: ", err);
+                },
+                complete: function(){
+                    console.log("Request Completed");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
