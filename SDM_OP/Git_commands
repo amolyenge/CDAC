@@ -1,0 +1,156 @@
+=====================================================================================================================================================================================================================
+
+⚙️ Basic Setup Commands
+Command	Description	Example
+
+git --version	Check Git version	git --version
+git config --global user.name "Your Name"	Set global username	git config --global user.name "Amol Yenge"
+git config --global user.email "you@example.com"	Set global email	git config --global user.email "amol@gmail.com"
+git config --list	View all config settings	git config --list
+
+📝 Tip: Configuration is stored in a hidden file: ~/.gitconfig
+
+=======================================================================================================================================================================================================================
+
+📁 Creating and Initializing Repositories
+Command	Description	Example
+git init	Initialize a new Git repository	git init
+git clone <url>	Clone a remote repo from GitHub	git clone https://github.com/user/repo.git
+git status	Check status of working directory	git status
+
+🧩 Files states in Git:
+untracked → staged → committed
+
+=======================================================================================================================================================================================================================
+
+🧱 Working with Files
+Command	Description	Example
+git add <file>	Stage specific file	git add index.html
+git add .	Stage all modified files	git add .
+git reset <file>	Unstage a file	git reset index.html
+git rm <file>	Remove file from repo	git rm app.js
+git mv oldname newname	Rename file	git mv style.css main.css
+
+=======================================================================================================================================================================================================================
+
+💾 Committing Changes
+Command	Description	Example
+git commit -m "message"	Commit with message	git commit -m "Added login feature"
+git commit -am "message"	Add & commit tracked files	git commit -am "Updated styles"
+git log	Show commit history	git log
+git log --oneline	Short view of commit history	git log --oneline
+git show <commit_id>	Show details of a specific commit	git show a1b2c3d
+
+=======================================================================================================================================================================================================================
+
+🌿 Branching and Merging
+Command	Description	Example
+git branch	List all branches	git branch
+git branch <name>	Create a new branch	git branch feature-1
+git checkout <name>	Switch to branch	git checkout feature-1
+git checkout -b <name>	Create & switch to new branch	git checkout -b new-feature
+git merge <branch>	Merge branch into current	git merge feature-1
+git branch -d <name>	Delete branch	git branch -d feature-1
+git switch <branch>	Alternate way to switch branch	git switch main
+
+🧠 Tip: Always merge into the main branch after testing.
+
+=======================================================================================================================================================================================================================
+
+🚀 Working with Remote (GitHub)
+Command	Description	Example
+git remote add origin <url>	Link local repo to GitHub	git remote add origin https://github.com/amol/myapp.git
+git remote -v	Verify remote connection	git remote -v
+git push -u origin main	Push first time to remote	git push -u origin main
+git push	Push commits to remote	git push
+git pull	Fetch & merge latest changes	git pull
+git fetch	Only fetch updates, no merge	git fetch
+git clone <url>	Clone existing repo	git clone https://github.com/amol/project.git
+
+=======================================================================================================================================================================================================================
+
+🧰 Undoing Changes
+Command	Description	Example
+git checkout -- <file>	Discard changes in working dir	git checkout -- index.html
+git revert <commit_id>	Undo commit by creating new one	git revert a1b2c3d
+git reset --soft <commit_id>	Undo commit but keep changes staged	git reset --soft HEAD~1
+git reset --hard <commit_id>	Undo commit and discard changes	git reset --hard HEAD~1
+
+⚠️ Caution: --hard deletes local changes permanently!
+
+=======================================================================================================================================================================================================================
+
+🧭 Tagging (Versions)
+Command	Description	Example
+git tag	List all tags	git tag
+git tag <tag_name>	Create a tag	git tag v1.0
+git show <tag_name>	Show tag details	git show v1.0
+git push origin <tag_name>	Push tag to remote	git push origin v1.0
+git push origin --tags	Push all tags	git push origin --tags
+
+=======================================================================================================================================================================================================================
+
+🧩 Stash (Temporary Save)
+Command	Description	Example
+git stash	Save uncommitted changes temporarily	git stash
+git stash list	List all stashes	git stash list
+git stash pop	Reapply last stash	git stash pop
+git stash drop	Delete last stash	git stash drop
+
+=======================================================================================================================================================================================================================
+
+🧹 Cleaning Up
+Command	Description	Example
+git clean -n	Show what would be deleted	git clean -n
+git clean -f	Delete untracked files	git clean -f
+
+=======================================================================================================================================================================================================================
+🧑‍🤝‍🧑 Collaboration (Pull Requests)
+
+Typical flow:
+
+Fork a repo on GitHub
+
+git clone <fork-url>
+
+Create a new branch
+
+Make changes, commit
+
+git push origin <branch>
+
+Go to GitHub → Click Pull Request
+
+=======================================================================================================================================================================================================================
+
+📊 Shortcuts & Info Commands
+Command	Description
+git diff	Show differences between commits or files
+git blame <file>	Show who changed which line
+git shortlog	Summary of commits per author
+git reflog	Show history of all HEAD changes
+git describe	Describe current commit with tags
+
+=======================================================================================================================================================================================================================
+
+🔄 Common Git Workflow Example
+# Step 1: Initialize
+git init
+
+# Step 2: Connect to GitHub
+git remote add origin https://github.com/amol/myproject.git
+
+# Step 3: Check status
+git status
+
+# Step 4: Add files
+git add .
+
+# Step 5: Commit
+git commit -m "Initial commit"
+
+# Step 6: Push to GitHub
+git branch -M main
+git push -u origin main
+
+=======================================================================================================================================================================================================================
