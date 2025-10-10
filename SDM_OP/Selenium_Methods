@@ -1,0 +1,167 @@
+==============================================================================================================================================================================================================
+
+🧩 Selenium WebDriver Methods & Commands List
+
+==============================================================================================================================================================================================================
+
+1️⃣ Browser Commands
+
+get(String url)  -> 	Opens the specified URL	driver.get("https://example.com");
+
+getCurrentUrl()   -> 		Returns current URL	String url = driver.getCurrentUrl();
+
+getTitle()	   -> 	Returns page title	String title = driver.getTitle();
+
+getPageSource()   -> 		Returns page HTML source	String source = driver.getPageSource();
+
+navigate().to(String url)   -> 		Navigates to URL	driver.navigate().to("https://example.com");
+
+navigate().back()   -> 		Goes back in browser history	driver.navigate().back();
+
+navigate().forward()	   -> 	Goes forward in browser history	driver.navigate().forward();
+
+navigate().refresh()	  -> 	Refreshes the page	driver.navigate().refresh();
+
+close()	  -> 	Closes current browser window	driver.close();
+
+quit()	  -> 	Closes all browser windows	driver.quit();
+
+manage().window().maximize()   -> 		Maximizes browser window	driver.manage().window().maximize();
+
+manage().window().fullscreen()   -> 		Fullscreen browser window	driver.manage().window().fullscreen();
+
+==============================================================================================================================================================================================================
+
+2️⃣ Locating Elements
+
+findElement(By locator)	   -> 	Finds a single element	WebElement e = driver.findElement(By.id("username"));
+
+findElements(By locator)	  -> 	Finds multiple elements	List<WebElement> list = driver.findElements(By.className("menu"));
+
+🔹 Locator Types (By)
+
+By.id()	  -> 	Locate element by ID	By.id("username")
+
+By.name()	  -> 	Locate element by name	By.name("password")
+
+By.className()	  -> 	Locate by class	By.className("btn")
+
+By.tagName()	  -> 	Locate by tag	By.tagName("input")
+
+By.linkText()	  -> 	Locate by full link text	By.linkText("Click here")
+
+By.partialLinkText()	  -> 	Locate by partial link text	By.partialLinkText("Click")
+
+By.cssSelector()	  -> 	Locate using CSS	By.cssSelector(".class #id")
+
+By.xpath()  -> 		Locate using XPath	By.xpath("//input[@id='username']")
+
+==============================================================================================================================================================================================================
+
+3️⃣ WebElement Methods (For Interacting with Elements)
+
+click()   -> 		Clicks element	element.click();
+
+sendKeys(String keys)	   -> 	Enters text	element.sendKeys("admin");
+
+clear()	   -> 	Clears input field	element.clear();
+
+getText()	   -> 	Returns visible text	String text = element.getText();
+
+getAttribute(String name)	   -> 	Returns attribute value	String val = element.getAttribute("value");
+
+getCssValue(String property)	   -> 	Returns CSS property value	String color = element.getCssValue("color");
+
+getTagName()	  -> 	Returns HTML tag name	String tag = element.getTagName();
+
+isDisplayed()  -> 		Checks visibility	boolean flag = element.isDisplayed();
+
+isEnabled()	  -> 	Checks if enabled	boolean flag = element.isEnabled();
+
+isSelected()	  -> 	Checks if selected	boolean flag = element.isSelected();
+
+==============================================================================================================================================================================================================
+
+4️⃣ Dropdown / Select Methods
+
+Requires: import org.openqa.selenium.support.ui.Select;
+
+Select select = new Select(element)  -> 		Creates Select object	Select s = new Select(driver.findElement(By.id("dropdown")));
+
+selectByVisibleText(String text)	  -> 	Select option by visible text	s.selectByVisibleText("Option1");
+
+selectByValue(String value)  -> 		Select option by value attribute	s.selectByValue("1");
+
+selectByIndex(int index)  -> 		Select option by index	s.selectByIndex(0);
+
+getOptions()	  -> 	Returns all options	List<WebElement> options = s.getOptions();
+
+getFirstSelectedOption()	  -> 	Returns first selected option	WebElement selected = s.getFirstSelectedOption();
+
+deselectAll()	  -> 	Deselects all options (for multi-select)	s.deselectAll();
+
+==============================================================================================================================================================================================================
+
+5️⃣ Actions Class Methods (Mouse / Keyboard)
+
+Requires: import org.openqa.selenium.interactions.Actions;
+
+moveToElement(WebElement)  -> 		Hover over element	actions.moveToElement(element).perform();
+
+click()	  -> 	Click	actions.click(element).perform();
+
+doubleClick()	  -> 	Double-click	actions.doubleClick(element).perform();
+
+contextClick()  -> 		Right-click	actions.contextClick(element).perform();
+
+dragAndDrop(source, target)	  -> 	Drag and drop	actions.dragAndDrop(src, dest).perform();
+
+clickAndHold(element)	  -> 	Click and hold	actions.clickAndHold(element).perform();
+
+release()  -> 		Release mouse	actions.release().perform();
+
+sendKeys(Keys key)	  -> 	Keyboard key actions	actions.sendKeys(Keys.ENTER).perform();
+
+==============================================================================================================================================================================================================
+
+6️⃣ Alerts / Popups
+
+switchTo().alert()	  -> 	Switch to alert	Alert a = driver.switchTo().alert();
+
+accept()	  -> 	Click OK	a.accept();
+
+dismiss()	  -> 	Click Cancel	a.dismiss();
+
+getText()	  -> 	Get alert text	String msg = a.getText();
+
+sendKeys(String text)  -> 		Enter text in prompt	a.sendKeys("input");
+
+==============================================================================================================================================================================================================
+
+7️⃣ Frames / Windows Handling
+
+switchTo().frame(int index)	  -> 	Switch by index	driver.switchTo().frame(0);
+
+switchTo().frame(String nameOrId)	  -> 	Switch by name or ID	driver.switchTo().frame("frame1");
+
+switchTo().frame(WebElement)	  -> 	Switch by WebElement	driver.switchTo().frame(element);
+
+switchTo().defaultContent()	  -> 	Switch back to main page	driver.switchTo().defaultContent();
+
+getWindowHandle()	  -> 	Get current window ID	String mainWin = driver.getWindowHandle();
+
+getWindowHandles()	  -> 	Get all window IDs	Set<String> wins = driver.getWindowHandles();
+
+switchTo().window(String handle)	  -> 	Switch to window	driver.switchTo().window(winId);
+
+==============================================================================================================================================================================================================
+
+8️⃣ Waits (Synchronization)
+
+implicitlyWait(Duration.ofSeconds(10))	  -> 	Wait for element	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
+WebDriverWait(driver, Duration).until(ExpectedConditions)	  -> 	Explicit wait	new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOf(element));
+
+Thread.sleep(ms)	  -> 	Hard wait (not recommended)	  -> 	Thread.sleep(2000);
+
+==============================================================================================================================================================================================================
