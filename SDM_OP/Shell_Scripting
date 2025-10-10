@@ -1,0 +1,289 @@
+===========================================================================================================================================================================================================
+🐚 Shell Scripting Complete Guide for Developers
+
+🧾 1️⃣ What is a Shell Script?
+
+A shell script is a file containing a series of Linux commands, logic (like loops, if-else, functions, etc.), and variables — all executed by the shell (like bash or sh).
+
+👉 Create a new script:
+
+nano myscript.sh
+
+
+👉 Start every shell script with the shebang line (defines which shell to use):
+
+#!/bin/bash
+
+
+👉 Make it executable:
+
+chmod +x myscript.sh
+
+
+👉 Run it:
+
+./myscript.sh
+
+===========================================================================================================================================================================================================
+
+🧩 2️⃣ Linux Variables
+
+Variables store values like text or numbers that can be used throughout your script.
+
+🟢 Declare Variables
+name="Amol"
+age=22
+
+
+⚠️ No spaces around = in shell scripting.
+
+🟢 Access Variables
+echo "My name is $name"
+echo "I am ${age} years old"
+
+🚫 3️⃣ Unsetting Variables
+
+Used to delete or clear variable values.
+
+unset name
+echo $name   # (no output)
+
+🔒 4️⃣ Read-only Variables
+
+Used when you don’t want a variable to be modified later.
+
+name="Amol"
+readonly name
+name="Yenge"   # ❌ will give an error
+
+
+Check all read-only variables:
+
+readonly
+
+===========================================================================================================================================================================================================
+
+📥 5️⃣ User Input (read Command)
+
+To take input from the user.
+
+#!/bin/bash
+echo "Enter your name:"
+read username
+echo "Welcome, $username!"
+
+
+To take input on the same line:
+
+read -p "Enter your city: " city
+echo "City: $city"
+
+
+To hide password input:
+
+read -sp "Enter password: " pass
+echo
+echo "Password entered."
+
+===========================================================================================================================================================================================================
+
+🧠 6️⃣ Conditional Statements
+
+🔸 if Statement
+if [ $age -gt 18 ]
+then
+  echo "You are an adult."
+fi
+--------------------------------------------------------------------
+🔸 if-else Statement
+if [ $age -ge 18 ]
+then
+  echo "Eligible to vote."
+else
+  echo "Not eligible."
+fi
+---------------------------------------------------------------------
+🔸 if-elif-else Ladder
+if [ $marks -ge 75 ]
+then
+  echo "Distinction"
+elif [ $marks -ge 60 ]
+then
+  echo "First class"
+else
+  echo "Fail"
+fi
+
+===========================================================================================================================================================================================================
+
+⚖️ 7️⃣ Switch (case) Statement
+#!/bin/bash
+echo "Enter a number:"
+read num
+
+case $num in
+  1) echo "One" ;;
+  2) echo "Two" ;;
+  3) echo "Three" ;;
+  *) echo "Invalid input" ;;
+esac
+
+===========================================================================================================================================================================================================
+
+🔁 8️⃣ Loops
+🔹 for Loop
+for i in 1 2 3 4 5
+do
+  echo "Number: $i"
+done
+
+
+With sequence:
+
+for i in {1..5}
+do
+  echo "Count: $i"
+done
+
+🔹 while Loop
+count=1
+while [ $count -le 5 ]
+do
+  echo "Iteration $count"
+  ((count++))
+done
+
+🔹 until Loop
+
+Runs until condition becomes true.
+
+x=1
+until [ $x -gt 5 ]
+do
+  echo "Value: $x"
+  ((x++))
+done
+
+===========================================================================================================================================================================================================
+
+⚙️ 9️⃣ Arithmetic Operations
+a=10
+b=3
+sum=$((a + b))
+diff=$((a - b))
+mul=$((a * b))
+div=$((a / b))
+
+echo "Sum: $sum, Diff: $diff, Mul: $mul, Div: $div"
+
+===========================================================================================================================================================================================================
+
+🧮 🔟 Comparison Operators
+Type	Operator	Description
+Numeric	-eq	Equal
+Numeric	-ne	Not equal
+Numeric	-gt	Greater than
+Numeric	-lt	Less than
+Numeric	-ge	Greater or equal
+Numeric	-le	Less or equal
+String	=	Equal
+String	!=	Not equal
+String	-z	Empty string
+String	-n	Not empty
+
+===========================================================================================================================================================================================================
+🧰 11️⃣ Functions in Shell Script
+#!/bin/bash
+
+function greet() {
+  echo "Hello, $1!"
+}
+
+greet "Amol"
+
+
+or
+
+greet() {
+  echo "Welcome to shell scripting!"
+}
+greet
+
+===========================================================================================================================================================================================================
+
+🧾 12️⃣ Command Line Arguments
+#!/bin/bash
+echo "Script name: $0"
+echo "First argument: $1"
+echo "Second argument: $2"
+echo "Total arguments: $#"
+
+
+Run:
+
+./myscript.sh hello world
+
+===========================================================================================================================================================================================================
+
+📁 13️⃣ Working with Files
+
+Check if a file exists:
+
+if [ -f "data.txt" ]; then
+  echo "File exists"
+else
+  echo "File not found"
+fi
+
+
+Check if a directory exists:
+
+if [ -d "myfolder" ]; then
+  echo "Directory exists"
+fi
+
+===========================================================================================================================================================================================================
+
+📊 14️⃣ Important Developer Examples
+
+✅ Print system info
+
+echo "System: $(uname -a)"
+echo "User: $(whoami)"
+echo "Date: $(date)"
+
+
+✅ Backup a file
+
+cp myfile.txt backup_$(date +%F).txt
+
+
+✅ Monitor CPU usage
+
+top -n 1 | head -10
+
+
+✅ Loop over files
+
+for file in *.txt
+do
+  echo "Processing $file"
+done
+
+
+✅ Check internet connection
+
+ping -c 2 google.com > /dev/null && echo "Online" || echo "Offline"
+
+===========================================================================================================================================================================================================
+
+🧹 15️⃣ Clean & Exit Script Example
+#!/bin/bash
+echo "Starting process..."
+sleep 2
+echo "Cleaning up..."
+sleep 1
+echo "Done!"
+exit 0
+
+===========================================================================================================================================================================================================
