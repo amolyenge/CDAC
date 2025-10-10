@@ -1,0 +1,160 @@
+====================================================================================================================================================================================================================================
+
+📁 1. File and Directory Commands
+
+1️⃣ pwd
+→ Prints the current working directory (your current location in the file system).
+
+2️⃣ ls
+→ Lists all files and directories in the current location.
+
+3️⃣ ls -a
+→ Lists all files, including hidden files (those starting with a dot .).
+
+4️⃣ ls -l
+→ Displays detailed information about files (permissions, owner, size, date).
+
+5️⃣ ls -lt
+→ Lists files sorted by modification time (latest first).
+
+6️⃣ ls -ltr
+→ Lists files sorted by modification time (oldest first).
+
+7️⃣ cd foldername
+→ Change directory to the specified folder.
+
+8️⃣ cd ..
+→ Move one level up (to the parent directory).
+
+9️⃣ mkdir foldername
+→ Creates a new directory (folder).
+
+10️⃣ rmdir foldername
+→ Removes an empty directory.
+
+11️⃣ rm file.txt
+→ Deletes a file.
+
+12️⃣ rm -r foldername
+→ Deletes a folder and all its contents (recursive remove).
+
+13️⃣ cp file1 file2
+→ Copies file1 to file2 (creates a duplicate).
+
+14️⃣ cp -r folder1 folder2
+→ Copies folders recursively.
+
+15️⃣ mv file1 file2
+→ Moves or renames files or directories.
+
+16️⃣ touch file.txt
+→ Creates a new empty file.
+
+17️⃣ cat file.txt
+→ Displays file contents in the terminal.
+
+18️⃣ head -n 10 file.txt
+→ Shows the first 10 lines of a file.
+
+19️⃣ tail -n 10 file.txt
+→ Shows the last 10 lines of a file.
+
+20️⃣ less file.txt
+→ Opens file content in a scrollable view.
+
+====================================================================================================================================================================================================================================
+
+✍️ 2. File Editing Commands
+
+21️⃣ nano file.txt
+→ Opens file in the Nano text editor (easy to use).
+
+22️⃣ vim file.txt
+→ Opens file in the Vim editor (advanced text editor).
+
+🔍 3. Search and Locate Commands
+
+23️⃣ grep "word" file.txt
+→ Searches for a specific word or pattern in a file.
+
+24️⃣ find . -name "file.txt"
+→ Searches for a file by name from the current directory.
+
+====================================================================================================================================================================================================================================
+
+⚙️ 4. File Permissions and Ownership
+
+25️⃣ ls -l
+→ Shows file permissions (read, write, execute).
+
+26️⃣ chmod 777 file.txt
+→ Changes file permission to full access for everyone.
+
+27️⃣ chown user file.txt
+→ Changes ownership of a file.
+
+====================================================================================================================================================================================================================================
+
+💻 5. System and Process Management
+
+28️⃣ top
+→ Displays running processes and system usage in real-time.
+
+29️⃣ ps aux
+→ Shows a snapshot of all running processes.
+
+30️⃣ kill process_id
+→ Terminates a process using its process ID.
+
+====================================================================================================================================================================================================================================
+
+💾 6. Disk and Memory Usage
+
+31️⃣ df -h
+→ Shows disk usage in human-readable format.
+
+32️⃣ du -sh foldername
+→ Shows the size of a folder.
+
+33️⃣ free -h
+→ Displays memory (RAM) usage.
+
+====================================================================================================================================================================================================================================
+
+👥 7. User and System Info
+
+34️⃣ who
+→ Lists all currently logged-in users.
+
+35️⃣ whoami
+→ Displays your current username.
+
+36️⃣ date
+→ Displays current system date and time.
+
+37️⃣ date +%D
+→ Shows date in short format (MM/DD/YY).
+
+38️⃣ date +%T
+→ Shows current time only.
+
+39️⃣ hostname
+→ Displays the system hostname.
+
+40️⃣ uname -a
+→ Displays system and kernel information.
+
+====================================================================================================================================================================================================================================
+
+🧹 8. Miscellaneous Commands
+
+41️⃣ clear
+→ Clears the terminal screen.
+
+42️⃣ history
+→ Shows the list of previously used commands.
+
+43️⃣ exit
+→ Logs out or closes the terminal.
+
+====================================================================================================================================================================================================================================
