@@ -26,3 +26,32 @@ function FetchUsers() {
 }
 
 export default FetchUsers;
+
+//=================================================================================================================================================================================================
+
+// fetch only on button click
+import React, { useState } from "react";
+
+function FetchOnClick() {
+  const [user, setUser] = useState(null);
+
+  const fetchUser = async () => {
+    const res = await fetch("https://jsonplaceholder.typicode.com/users/1");
+    const data = await res.json();
+    setUser(data);
+  };
+
+  return (
+    <div>
+      <button onClick={fetchUser}>Get User</button>
+      {user && (
+        <div>
+          <h3>{user.name}</h3>
+          <p>{user.email}</p>
+        </div>
+      )}
+    </div>
+  );
+}
+
+export default FetchOnClick;
