@@ -40,3 +40,35 @@ function FetchUsers() {
 }
 
 export default FetchUsers;
+
+
+//============================================================================================================================================================================
+
+// fetch only on click of button
+
+import React, { useState } from "react";
+import axios from "axios";
+
+function FetchUsers() {
+  const [users, setUsers] = useState([]);
+
+  const fetchData = async () => {
+    const response = await axios.get("https://jsonplaceholder.typicode.com/users");
+    setUsers(response.data);
+  };
+
+  return (
+    <div>
+      <h2>Users List</h2>
+      <button onClick={fetchData}>Load Users</button>
+
+      <ul>
+        {users.map((user) => (
+          <li key={user.id}>{user.name}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+export default FetchUsers;
