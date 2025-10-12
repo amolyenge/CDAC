@@ -1,3 +1,6 @@
+// npm install axios  ---- to use axios
+
+
 import React, { useState, useEffect } from "react";
 import axios from "axios"; // ✅ import axios
 
@@ -45,6 +48,7 @@ export default FetchUsers;
 //============================================================================================================================================================================
 
 // fetch only on click of button
+// npm install axios  ---- to use axios
 
 import React, { useState } from "react";
 import axios from "axios";
