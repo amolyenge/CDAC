@@ -1,48 +1,50 @@
 // npm install axios  ---- to use axios
 
 
-import React, { useState, useEffect } from "react";
-import axios from "axios"; // ✅ import axios
+import React, {useState , useEffect} from "react";
+import axios from "axios";
 
-function FetchUsers() {
-  const [users, setUsers] = useState([]);
-  const [loading, setLoading] = useState(true); // optional: loading state
-  const [error, setError] = useState(null); // optional: error state
+function AxiosExample1(){
+    const[users , setUsers] = useState([]);
+    const[loading , setLoading] = useState(true);
+    const[error , setError] = useState(null);
 
-  useEffect(() => {
-    async function fetchData() {
-      try {
-        // Axios automatically parses JSON, so no need for response.json()
-        const response = await axios.get("https://jsonplaceholder.typicode.com/users");
-        setUsers(response.data);
-      } catch (err) {
-        setError("Failed to fetch users 😢");
-        console.error(err);
-      } finally {
-        setLoading(false);
-      }
-    }
+    useEffect(()=>{
+        async function fetchData(){
+            try{
+                const response = await axios.get("https://jsonplaceholder.typicode.com/users");
+                setUsers(response.data);
+            }catch(err){
+               setError("Failed to fetch Data");
+               console.log(err);
+            }finally{
+               setLoading(false);
+            }
+        }
+        fetchData();
+     },[]);
 
-    fetchData();
-  }, []);
+     if(loading) return <h3>Loading.......</h3>;
+     if(error) return <h3 style={{textAlign:"center"}}>{error}</h3>
 
-  // Optional UI states
-  if (loading) return <h3>Loading...</h3>;
-  if (error) return <h3 style={{ color: "red" }}>{error}</h3>;
-
-  return (
-    <div style={{ textAlign: "center" }}>
-      <h2>Users:</h2>
-      <ul>
-        {users.map((u) => (
-          <li key={u.id}>{u.name}</li>
-        ))}
-      </ul>
-    </div>
-  );
+     return(
+        <div>
+             <h2>Users: </h2>
+             <ul>
+                {users.map((u) =>(
+                    <li key={u.id}>
+                        <p>Name : {u.name}</p>
+                        <p>UserName : {u.username}</p>
+                        <p>Email: {u.email}</p>
+                        <p>===============================================================================================================</p>
+                    </li>
+                ))}
+             </ul>
+        </div>
+     )
 }
 
-export default FetchUsers;
+export default AxiosExample1;
 
 
 //============================================================================================================================================================================
@@ -50,29 +52,36 @@ export default FetchUsers;
 // fetch only on click of button
 // npm install axios  ---- to use axios
 
-import React, { useState } from "react";
+import React,{useState } from "react";
 import axios from "axios";
 
-function FetchUsers() {
-  const [users, setUsers] = useState([]);
+function AxiosExample2(){
+    const[users,setUsers] = useState([]);
+    const[loading , setLoading]= useState(true);
+    const[error,setError] = useState(null);
 
-  const fetchData = async () => {
-    const response = await axios.get("https://jsonplaceholder.typicode.com/users");
-    setUsers(response.data);
-  };
+    async function fetchData(){
+            const response = await axios.get("https://jsonplaceholder.typicode.com/users");
+            setUsers(response.data);
+    }
+ 
 
-  return (
-    <div>
-      <h2>Users List</h2>
-      <button onClick={fetchData}>Load Users</button>
-
-      <ul>
-        {users.map((user) => (
-          <li key={user.id}>{user.name}</li>
-        ))}
-      </ul>
-    </div>
-  );
+    return(
+        <div>
+        <button onClick={fetchData}>Load Users.</button>
+        <h3>Users : </h3>
+        <ul>
+            {users.map((u)=>(
+                <li key={u.id}>
+                    <p>Name: {u.name}</p>
+                    <p>UserName: {u.username}</p>
+                    <p>Email: {u.email}</p>
+                    <p>===================================================================================================</p>
+                </li>
+            ))}
+        </ul>
+        </div>
+    )
 }
 
-export default FetchUsers;
+export default AxiosExample2;
