@@ -1,57 +1,67 @@
-import React, { useState, useEffect } from "react";
+import React,{useState , useEffect} from "react";
 
-function FetchUsers() {
-  const [users, setUsers] = useState([]);
+function FetchExample1(){
+    const[users , setUsers] = useState([]);
 
-  useEffect(() => {
-    async function fetchData() {
-      const response = await fetch("https://jsonplaceholder.typicode.com/users");
-      const data = await response.json();
-      setUsers(data);
-    }
+    useEffect(()=>{
+      async function fetchData(){
+        const response = await fetch("https://jsonplaceholder.typicode.com/users");
+        const data = await response.json();
+        setUsers(data);
+      }
+      fetchData();
+    },[]);
 
-    fetchData();
-  }, []); // only once
-
-  return (
-    <div>
-      <h2>Users:</h2>
-      <ul>
-        {users.map((u) => (
-          <li key={u.id}>{u.name}</li>
-        ))}
-      </ul>
-    </div>
-  );
+    return(
+      <div>
+        <h3>Users : </h3>
+         <ul>
+            {users.map((u)=>(
+                <li key={u.id}>
+                    <p>Name : {u.name}</p>
+                    <p>UserName : {u.username}</p>
+                    <p>Email : {u.email}</p>
+                    <p>=====================================================================</p>
+                </li>
+            ))}
+         </ul>
+      </div>
+    );
 }
 
-export default FetchUsers;
+export default FetchExample1;
 
 //=================================================================================================================================================================================================
 
 // fetch only on button click
-import React, { useState } from "react";
+import React,{useState} from "react";
 
-function FetchOnClick() {
-  const [user, setUser] = useState(null);
+function FetchExample2(){
+    const[users , setUsers] = useState([]);
 
-  const fetchUser = async () => {
-    const res = await fetch("https://jsonplaceholder.typicode.com/users/1");
-    const data = await res.json();
-    setUser(data);
-  };
+    async function fetchData(){
+        const response = await fetch("https://jsonplaceholder.typicode.com/users");
+        const data = await response.json();
+        setUsers(data);
+    };
 
-  return (
-    <div>
-      <button onClick={fetchUser}>Get User</button>
-      {user && (
+  
+    return(
         <div>
-          <h3>{user.name}</h3>
-          <p>{user.email}</p>
+            <button onClick={fetchData}>Load Data</button>
+            <h3>Users : </h3>
+            <ul>
+                {users.map((u)=>(
+                    <li key={u.id}>
+                        <p>Name : {u.name}</p>
+                        <p>UserName : {u.username}</p>
+                        <p>Email : {u.email}</p>
+                        <p>===========================================================================================</p>
+                    </li>
+                ))}
+            </ul>
         </div>
-      )}
-    </div>
-  );
+    )
 }
 
-export default FetchOnClick;
+export default FetchExample2;
