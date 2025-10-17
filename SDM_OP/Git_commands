@@ -154,3 +154,36 @@ git branch -M main
 git push -u origin main
 
 =======================================================================================================================================================================================================================
+
+
+clone 
+
+git clone <link>
+
+git status
+
+make changes
+
+git status
+
+git add .
+
+git commit -m "message"
+
+git push origin main
+
+
+===========================================================================================================================================================================================================================
+
+Branching
+
+1)   git branch feature1   --- creates branch
+2)   git branch   --------- to check current branch
+3)   git checkout feature1   --- switch to feature1
+4)   git switch feature1  ----- switch to feature1
+5)   now make the changes
+6)   git add .
+7)   git commit -m "message"
+8)   now switch to main
+9)   merge
+10)  push git push origin main
