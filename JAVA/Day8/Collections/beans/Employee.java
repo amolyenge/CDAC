@@ -36,7 +36,6 @@ public class Employee {
 	// Overridden equals methods of object so we can reuse again and again
 	@Override
 	public boolean equals(Object obj) {
-		System.out.println("in equals method "+this.empid+"----"+((Employee)obj).empid);
 		return this.empid==((Employee)obj).empid;
 	}
 
