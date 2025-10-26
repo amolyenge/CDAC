@@ -26,3 +26,5 @@ public class Armstrong {
 		}
 
 }
+
+// armstrong num ex    153 = (1e3 + 5e3 + 3e3) = (1 + 125 + 27 = 153)
