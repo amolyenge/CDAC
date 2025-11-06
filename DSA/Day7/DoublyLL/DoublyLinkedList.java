@@ -18,7 +18,21 @@ public class DoublyLinkedList {
 		}
 		
 		public void addByValue(int val,int num) {
+		Node newNode=new Node(val);
+		Node temp=head;
+		while(temp!=null && temp.data!=num)
+			temp=temp.next;
+		if(temp!=null) {
+			newNode.next=temp.next;
+			newNode.prev=temp;
+			temp.next=newNode;
+			if(newNode.next!=null) {
+				newNode.next.prev=newNode;
+			}
 			
+		}else {
+			System.out.println(num+ " Not found");
+		}
 		}
 		public void addByPosition(int pos,int val) {
 			Node newNode=new Node(val);
@@ -81,7 +95,25 @@ public class DoublyLinkedList {
 			
 		}
 	    public void deleteByPosition(int pos) {
-			
+			Node temp=head;
+		if(pos==1) {
+			head=temp.next;
+			head.prev=null;
+		}else {
+			for(int i=0;temp!=null && i<pos-1;i++) {
+				temp=temp.next;
+			}
+			if(temp!=null) {
+				temp.prev.next=temp.next;
+				if(temp.next!=null) {
+					temp.next.prev=temp.prev;
+					temp.next=null;
+				}
+				temp.prev=null;
+			}else {
+				System.out.println(pos + " is beyond the limit of the list");
+			}
+		}
 		}
 		
 		
