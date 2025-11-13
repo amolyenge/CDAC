@@ -1,2 +1,6 @@
 https://github.com/AbdelrahmanTaymour/Shortly?tab=readme-ov-file
 https://github.com/tirtharajsinha/BulkyBookWeb
+https://github.com/YunmeiYe/Reactivities
+https://github.com/CozyQuest/sakenny/tree/main/sakenny
+https://github.com/ndresdavila/movie_theatre_seat_reservation
+https://github.com/MohamadNach/fullstack-ecommerce-app
