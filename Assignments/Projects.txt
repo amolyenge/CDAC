@@ -4,3 +4,10 @@ https://github.com/YunmeiYe/Reactivities
 https://github.com/CozyQuest/sakenny/tree/main/sakenny
 https://github.com/ndresdavila/movie_theatre_seat_reservation
 https://github.com/MohamadNach/fullstack-ecommerce-app
+
+
+https://github.com/purshink/ReactJS-Spring-Boot-Full-Stack-App?tab=readme-ov-file
+https://github.com/GattiHarishKumar/SpringBoot-Reactjs-Ecommerce
+https://github.com/Berko01/Advanced-Full-Stack-Project-With-Java-Spring-Boot-And-React-Redux-Online-Banking
+https://github.com/Ajiththeerthiya/Full-stack-Employee-Management-System-using-SpringBoot-and-React-Js-
+https://github.com/rahulsahay19/Java-React-FullStack
