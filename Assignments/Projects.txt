@@ -1,2 +1,5 @@
 https://github.com/AshedFox/BlogWebApp
 https://blog-app-3cda4.firebaseapp.com/
+https://github.com/mehulk05/Angular-Blogging-App
+https://github.com/miawinter98/Wave
+https://github.com/Bazl1/Bloggy
