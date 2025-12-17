@@ -1,0 +1,15 @@
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\03_OOP_Basics\bin\Debug\net8.0\03_OOP_Basics.exe
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\03_OOP_Basics\bin\Debug\net8.0\03_OOP_Basics.deps.json
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\03_OOP_Basics\bin\Debug\net8.0\03_OOP_Basics.runtimeconfig.json
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\03_OOP_Basics\bin\Debug\net8.0\03_OOP_Basics.dll
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\03_OOP_Basics\bin\Debug\net8.0\03_OOP_Basics.pdb
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\03_OOP_Basics\obj\Debug\net8.0\03_OOP_Basics.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\03_OOP_Basics\obj\Debug\net8.0\03_OOP_Basics.AssemblyInfoInputs.cache
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\03_OOP_Basics\obj\Debug\net8.0\03_OOP_Basics.AssemblyInfo.cs
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\03_OOP_Basics\obj\Debug\net8.0\03_OOP_Basics.csproj.CoreCompileInputs.cache
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\03_OOP_Basics\obj\Debug\net8.0\03_OOP_Basics.sourcelink.json
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\03_OOP_Basics\obj\Debug\net8.0\03_OOP_Basics.dll
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\03_OOP_Basics\obj\Debug\net8.0\refint\03_OOP_Basics.dll
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\03_OOP_Basics\obj\Debug\net8.0\03_OOP_Basics.pdb
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\03_OOP_Basics\obj\Debug\net8.0\03_OOP_Basics.genruntimeconfig.cache
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\03_OOP_Basics\obj\Debug\net8.0\ref\03_OOP_Basics.dll

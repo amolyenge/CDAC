@@ -1,0 +1,15 @@
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\03_Interface\bin\Debug\net8.0\03_Interface.exe
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\03_Interface\bin\Debug\net8.0\03_Interface.deps.json
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\03_Interface\bin\Debug\net8.0\03_Interface.runtimeconfig.json
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\03_Interface\bin\Debug\net8.0\03_Interface.dll
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\03_Interface\bin\Debug\net8.0\03_Interface.pdb
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\03_Interface\obj\Debug\net8.0\03_Interface.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\03_Interface\obj\Debug\net8.0\03_Interface.AssemblyInfoInputs.cache
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\03_Interface\obj\Debug\net8.0\03_Interface.AssemblyInfo.cs
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\03_Interface\obj\Debug\net8.0\03_Interface.csproj.CoreCompileInputs.cache
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\03_Interface\obj\Debug\net8.0\03_Interface.sourcelink.json
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\03_Interface\obj\Debug\net8.0\03_Interface.dll
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\03_Interface\obj\Debug\net8.0\refint\03_Interface.dll
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\03_Interface\obj\Debug\net8.0\03_Interface.pdb
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\03_Interface\obj\Debug\net8.0\03_Interface.genruntimeconfig.cache
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\03_Interface\obj\Debug\net8.0\ref\03_Interface.dll
