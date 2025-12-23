@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\IET\\Desktop\\250845920005\\MS.NET\\Solution1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AE5D8DE7-433E-4871-A846-419592390C36}|Demo_Notepad\\Demo_Notepad.csproj|c:\\users\\iet\\desktop\\250845920005\\ms.net\\solution1\\demo_notepad\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE5D8DE7-433E-4871-A846-419592390C36}|Demo_Notepad\\Demo_Notepad.csproj|solutionrelative:demo_notepad\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{61D04E9B-2DB2-4213-AAE3-C1E5995AFF53}|Demo_Application\\Demo_Application.csproj|c:\\users\\iet\\desktop\\250845920005\\ms.net\\solution1\\demo_application\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61D04E9B-2DB2-4213-AAE3-C1E5995AFF53}|Demo_Application\\Demo_Application.csproj|solutionrelative:demo_application\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -20,13 +20,13 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\250845920005\\MS.NET\\Solution1\\Demo_Notepad\\Program.cs",
-              "RelativeDocumentMoniker": "Demo_Notepad\\Program.cs",
-              "ToolTip": "C:\\Users\\IET\\Desktop\\250845920005\\MS.NET\\Solution1\\Demo_Notepad\\Program.cs",
-              "RelativeToolTip": "Demo_Notepad\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAmAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\IET\\Desktop\\250845920005\\MS.NET\\Solution1\\Demo_Application\\Program.cs",
+              "RelativeDocumentMoniker": "Demo_Application\\Program.cs",
+              "ToolTip": "C:\\Users\\IET\\Desktop\\250845920005\\MS.NET\\Solution1\\Demo_Application\\Program.cs",
+              "RelativeToolTip": "Demo_Application\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T13:41:43.898Z",
+              "WhenOpened": "2025-12-23T09:14:07.641Z",
               "EditorCaption": ""
             }
           ]

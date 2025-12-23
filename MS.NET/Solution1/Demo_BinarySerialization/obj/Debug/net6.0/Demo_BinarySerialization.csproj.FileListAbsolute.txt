@@ -1,0 +1,15 @@
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_BinarySerialization\bin\Debug\net6.0\Demo_BinarySerialization.exe
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_BinarySerialization\bin\Debug\net6.0\Demo_BinarySerialization.deps.json
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_BinarySerialization\bin\Debug\net6.0\Demo_BinarySerialization.runtimeconfig.json
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_BinarySerialization\bin\Debug\net6.0\Demo_BinarySerialization.dll
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_BinarySerialization\bin\Debug\net6.0\Demo_BinarySerialization.pdb
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_BinarySerialization\obj\Debug\net6.0\Demo_BinarySerialization.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_BinarySerialization\obj\Debug\net6.0\Demo_BinarySerialization.AssemblyInfoInputs.cache
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_BinarySerialization\obj\Debug\net6.0\Demo_BinarySerialization.AssemblyInfo.cs
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_BinarySerialization\obj\Debug\net6.0\Demo_BinarySerialization.csproj.CoreCompileInputs.cache
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_BinarySerialization\obj\Debug\net6.0\Demo_BinarySerialization.sourcelink.json
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_BinarySerialization\obj\Debug\net6.0\Demo_BinarySerialization.dll
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_BinarySerialization\obj\Debug\net6.0\refint\Demo_BinarySerialization.dll
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_BinarySerialization\obj\Debug\net6.0\Demo_BinarySerialization.pdb
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_BinarySerialization\obj\Debug\net6.0\Demo_BinarySerialization.genruntimeconfig.cache
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_BinarySerialization\obj\Debug\net6.0\ref\Demo_BinarySerialization.dll

@@ -1,0 +1,13 @@
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_EmpLib\obj\Debug\net8.0\Demo_EmpLib.csproj.AssemblyReference.cache
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_EmpLib\obj\Debug\net8.0\Demo_EmpLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_EmpLib\obj\Debug\net8.0\Demo_EmpLib.AssemblyInfoInputs.cache
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_EmpLib\obj\Debug\net8.0\Demo_EmpLib.AssemblyInfo.cs
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_EmpLib\obj\Debug\net8.0\Demo_EmpLib.csproj.CoreCompileInputs.cache
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_EmpLib\obj\Debug\net8.0\Demo_EmpLib.sourcelink.json
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_EmpLib\bin\Debug\net8.0\Demo_EmpLib.deps.json
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_EmpLib\bin\Debug\net8.0\Demo_EmpLib.dll
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_EmpLib\bin\Debug\net8.0\Demo_EmpLib.pdb
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_EmpLib\obj\Debug\net8.0\Demo_EmpLib.dll
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_EmpLib\obj\Debug\net8.0\refint\Demo_EmpLib.dll
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_EmpLib\obj\Debug\net8.0\Demo_EmpLib.pdb
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_EmpLib\obj\Debug\net8.0\ref\Demo_EmpLib.dll
