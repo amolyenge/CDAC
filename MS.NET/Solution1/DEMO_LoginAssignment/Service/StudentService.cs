@@ -15,9 +15,9 @@ namespace _42Demo_ConnectedAdoNet.BLL_Business_Logic_Layer_
             bool result = dal.VerifyUser(username, password);
 
             if (result)
-                Console.WriteLine("✅ Login Successful");
+                Console.WriteLine("Login Successful");
             else
-                Console.WriteLine("❌ Invalid Username or Password");
+                Console.WriteLine("Invalid Username or Password");
         }
 
         public void CreateUser(string username, string password)
@@ -25,9 +25,9 @@ namespace _42Demo_ConnectedAdoNet.BLL_Business_Logic_Layer_
             bool result = dal.CreateUser(username, password);
 
             if (result)
-                Console.WriteLine("✅ User Created Successfully");
+                Console.WriteLine("User Created Successfully");
             else
-                Console.WriteLine("❌ User Creation Failed");
+                Console.WriteLine("User Creation Failed");
         }
 
         public void UpdatePassword(string username, string newPassword)
@@ -35,9 +35,9 @@ namespace _42Demo_ConnectedAdoNet.BLL_Business_Logic_Layer_
             bool result = dal.UpdatePassword(username, newPassword);
 
             if (result)
-                Console.WriteLine("✅ Password Updated Successfully");
+                Console.WriteLine("Password Updated Successfully");
             else
-                Console.WriteLine("❌ Password Update Failed");
+                Console.WriteLine("Password Update Failed");
         }
     }
 }
