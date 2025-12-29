@@ -1,0 +1,15 @@
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_LINQ_03\bin\Debug\net8.0\Demo_LINQ_03.exe
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_LINQ_03\bin\Debug\net8.0\Demo_LINQ_03.deps.json
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_LINQ_03\bin\Debug\net8.0\Demo_LINQ_03.runtimeconfig.json
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_LINQ_03\bin\Debug\net8.0\Demo_LINQ_03.dll
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_LINQ_03\bin\Debug\net8.0\Demo_LINQ_03.pdb
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_LINQ_03\obj\Debug\net8.0\Demo_LINQ_03.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_LINQ_03\obj\Debug\net8.0\Demo_LINQ_03.AssemblyInfoInputs.cache
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_LINQ_03\obj\Debug\net8.0\Demo_LINQ_03.AssemblyInfo.cs
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_LINQ_03\obj\Debug\net8.0\Demo_LINQ_03.csproj.CoreCompileInputs.cache
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_LINQ_03\obj\Debug\net8.0\Demo_LINQ_03.sourcelink.json
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_LINQ_03\obj\Debug\net8.0\Demo_LINQ_03.dll
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_LINQ_03\obj\Debug\net8.0\refint\Demo_LINQ_03.dll
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_LINQ_03\obj\Debug\net8.0\Demo_LINQ_03.pdb
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_LINQ_03\obj\Debug\net8.0\Demo_LINQ_03.genruntimeconfig.cache
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_LINQ_03\obj\Debug\net8.0\ref\Demo_LINQ_03.dll

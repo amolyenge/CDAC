@@ -1,0 +1,15 @@
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_MyMath\bin\Debug\net8.0\Demo_MyMath.exe
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_MyMath\bin\Debug\net8.0\Demo_MyMath.deps.json
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_MyMath\bin\Debug\net8.0\Demo_MyMath.runtimeconfig.json
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_MyMath\bin\Debug\net8.0\Demo_MyMath.dll
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_MyMath\bin\Debug\net8.0\Demo_MyMath.pdb
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_MyMath\obj\Debug\net8.0\Demo_MyMath.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_MyMath\obj\Debug\net8.0\Demo_MyMath.AssemblyInfoInputs.cache
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_MyMath\obj\Debug\net8.0\Demo_MyMath.AssemblyInfo.cs
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_MyMath\obj\Debug\net8.0\Demo_MyMath.csproj.CoreCompileInputs.cache
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_MyMath\obj\Debug\net8.0\Demo_MyMath.sourcelink.json
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_MyMath\obj\Debug\net8.0\Demo_MyMath.dll
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_MyMath\obj\Debug\net8.0\refint\Demo_MyMath.dll
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_MyMath\obj\Debug\net8.0\Demo_MyMath.pdb
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_MyMath\obj\Debug\net8.0\Demo_MyMath.genruntimeconfig.cache
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_MyMath\obj\Debug\net8.0\ref\Demo_MyMath.dll

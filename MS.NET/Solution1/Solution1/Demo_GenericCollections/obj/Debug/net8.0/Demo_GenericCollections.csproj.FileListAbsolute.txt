@@ -1,0 +1,15 @@
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_GenericCollections\bin\Debug\net8.0\Demo_GenericCollections.exe
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_GenericCollections\bin\Debug\net8.0\Demo_GenericCollections.deps.json
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_GenericCollections\bin\Debug\net8.0\Demo_GenericCollections.runtimeconfig.json
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_GenericCollections\bin\Debug\net8.0\Demo_GenericCollections.dll
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_GenericCollections\bin\Debug\net8.0\Demo_GenericCollections.pdb
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_GenericCollections\obj\Debug\net8.0\Demo_GenericCollections.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_GenericCollections\obj\Debug\net8.0\Demo_GenericCollections.AssemblyInfoInputs.cache
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_GenericCollections\obj\Debug\net8.0\Demo_GenericCollections.AssemblyInfo.cs
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_GenericCollections\obj\Debug\net8.0\Demo_GenericCollections.csproj.CoreCompileInputs.cache
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_GenericCollections\obj\Debug\net8.0\Demo_GenericCollections.sourcelink.json
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_GenericCollections\obj\Debug\net8.0\Demo_GenericCollections.dll
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_GenericCollections\obj\Debug\net8.0\refint\Demo_GenericCollections.dll
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_GenericCollections\obj\Debug\net8.0\Demo_GenericCollections.pdb
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_GenericCollections\obj\Debug\net8.0\Demo_GenericCollections.genruntimeconfig.cache
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_GenericCollections\obj\Debug\net8.0\ref\Demo_GenericCollections.dll

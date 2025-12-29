@@ -1,0 +1,15 @@
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\PrimeNUmber\bin\Debug\net8.0\PrimeNUmber.exe
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\PrimeNUmber\bin\Debug\net8.0\PrimeNUmber.deps.json
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\PrimeNUmber\bin\Debug\net8.0\PrimeNUmber.runtimeconfig.json
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\PrimeNUmber\bin\Debug\net8.0\PrimeNUmber.dll
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\PrimeNUmber\bin\Debug\net8.0\PrimeNUmber.pdb
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\PrimeNUmber\obj\Debug\net8.0\PrimeNUmber.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\PrimeNUmber\obj\Debug\net8.0\PrimeNUmber.AssemblyInfoInputs.cache
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\PrimeNUmber\obj\Debug\net8.0\PrimeNUmber.AssemblyInfo.cs
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\PrimeNUmber\obj\Debug\net8.0\PrimeNUmber.csproj.CoreCompileInputs.cache
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\PrimeNUmber\obj\Debug\net8.0\PrimeNUmber.sourcelink.json
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\PrimeNUmber\obj\Debug\net8.0\PrimeNUmber.dll
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\PrimeNUmber\obj\Debug\net8.0\refint\PrimeNUmber.dll
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\PrimeNUmber\obj\Debug\net8.0\PrimeNUmber.pdb
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\PrimeNUmber\obj\Debug\net8.0\PrimeNUmber.genruntimeconfig.cache
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\PrimeNUmber\obj\Debug\net8.0\ref\PrimeNUmber.dll

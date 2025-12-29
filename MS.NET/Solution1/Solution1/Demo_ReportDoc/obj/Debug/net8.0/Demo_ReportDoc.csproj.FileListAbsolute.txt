@@ -1,0 +1,15 @@
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_ReportDoc\bin\Debug\net8.0\Demo_ReportDoc.exe
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_ReportDoc\bin\Debug\net8.0\Demo_ReportDoc.deps.json
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_ReportDoc\bin\Debug\net8.0\Demo_ReportDoc.runtimeconfig.json
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_ReportDoc\bin\Debug\net8.0\Demo_ReportDoc.dll
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_ReportDoc\bin\Debug\net8.0\Demo_ReportDoc.pdb
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_ReportDoc\obj\Debug\net8.0\Demo_ReportDoc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_ReportDoc\obj\Debug\net8.0\Demo_ReportDoc.AssemblyInfoInputs.cache
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_ReportDoc\obj\Debug\net8.0\Demo_ReportDoc.AssemblyInfo.cs
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_ReportDoc\obj\Debug\net8.0\Demo_ReportDoc.csproj.CoreCompileInputs.cache
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_ReportDoc\obj\Debug\net8.0\Demo_ReportDoc.sourcelink.json
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_ReportDoc\obj\Debug\net8.0\Demo_ReportDoc.dll
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_ReportDoc\obj\Debug\net8.0\refint\Demo_ReportDoc.dll
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_ReportDoc\obj\Debug\net8.0\Demo_ReportDoc.pdb
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_ReportDoc\obj\Debug\net8.0\Demo_ReportDoc.genruntimeconfig.cache
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_ReportDoc\obj\Debug\net8.0\ref\Demo_ReportDoc.dll

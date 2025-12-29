@@ -1,0 +1,12 @@
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\BVSAttributes\bin\Debug\net8.0\BVSAttributes.deps.json
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\BVSAttributes\bin\Debug\net8.0\BVSAttributes.dll
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\BVSAttributes\bin\Debug\net8.0\BVSAttributes.pdb
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\BVSAttributes\obj\Debug\net8.0\BVSAttributes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\BVSAttributes\obj\Debug\net8.0\BVSAttributes.AssemblyInfoInputs.cache
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\BVSAttributes\obj\Debug\net8.0\BVSAttributes.AssemblyInfo.cs
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\BVSAttributes\obj\Debug\net8.0\BVSAttributes.csproj.CoreCompileInputs.cache
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\BVSAttributes\obj\Debug\net8.0\BVSAttributes.sourcelink.json
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\BVSAttributes\obj\Debug\net8.0\BVSAttributes.dll
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\BVSAttributes\obj\Debug\net8.0\refint\BVSAttributes.dll
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\BVSAttributes\obj\Debug\net8.0\BVSAttributes.pdb
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\BVSAttributes\obj\Debug\net8.0\ref\BVSAttributes.dll

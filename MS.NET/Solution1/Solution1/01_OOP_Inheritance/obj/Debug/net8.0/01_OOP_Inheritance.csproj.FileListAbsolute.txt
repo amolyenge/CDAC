@@ -1,0 +1,15 @@
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\01_OOP_Inheritance\bin\Debug\net8.0\01_OOP_Inheritance.exe
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\01_OOP_Inheritance\bin\Debug\net8.0\01_OOP_Inheritance.deps.json
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\01_OOP_Inheritance\bin\Debug\net8.0\01_OOP_Inheritance.runtimeconfig.json
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\01_OOP_Inheritance\bin\Debug\net8.0\01_OOP_Inheritance.dll
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\01_OOP_Inheritance\bin\Debug\net8.0\01_OOP_Inheritance.pdb
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\01_OOP_Inheritance\obj\Debug\net8.0\01_OOP_Inheritance.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\01_OOP_Inheritance\obj\Debug\net8.0\01_OOP_Inheritance.AssemblyInfoInputs.cache
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\01_OOP_Inheritance\obj\Debug\net8.0\01_OOP_Inheritance.AssemblyInfo.cs
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\01_OOP_Inheritance\obj\Debug\net8.0\01_OOP_Inheritance.csproj.CoreCompileInputs.cache
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\01_OOP_Inheritance\obj\Debug\net8.0\01_OOP_Inheritance.sourcelink.json
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\01_OOP_Inheritance\obj\Debug\net8.0\01_OOP_Inheritance.dll
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\01_OOP_Inheritance\obj\Debug\net8.0\refint\01_OOP_Inheritance.dll
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\01_OOP_Inheritance\obj\Debug\net8.0\01_OOP_Inheritance.pdb
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\01_OOP_Inheritance\obj\Debug\net8.0\01_OOP_Inheritance.genruntimeconfig.cache
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\01_OOP_Inheritance\obj\Debug\net8.0\ref\01_OOP_Inheritance.dll

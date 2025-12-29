@@ -1,0 +1,15 @@
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_MultiCastDelegates\bin\Debug\net8.0\Demo_MultiCastDelegates.exe
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_MultiCastDelegates\bin\Debug\net8.0\Demo_MultiCastDelegates.deps.json
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_MultiCastDelegates\bin\Debug\net8.0\Demo_MultiCastDelegates.runtimeconfig.json
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_MultiCastDelegates\bin\Debug\net8.0\Demo_MultiCastDelegates.dll
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_MultiCastDelegates\bin\Debug\net8.0\Demo_MultiCastDelegates.pdb
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_MultiCastDelegates\obj\Debug\net8.0\Demo_MultiCastDelegates.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_MultiCastDelegates\obj\Debug\net8.0\Demo_MultiCastDelegates.AssemblyInfoInputs.cache
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_MultiCastDelegates\obj\Debug\net8.0\Demo_MultiCastDelegates.AssemblyInfo.cs
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_MultiCastDelegates\obj\Debug\net8.0\Demo_MultiCastDelegates.csproj.CoreCompileInputs.cache
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_MultiCastDelegates\obj\Debug\net8.0\Demo_MultiCastDelegates.sourcelink.json
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_MultiCastDelegates\obj\Debug\net8.0\Demo_MultiCastDelegates.dll
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_MultiCastDelegates\obj\Debug\net8.0\refint\Demo_MultiCastDelegates.dll
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_MultiCastDelegates\obj\Debug\net8.0\Demo_MultiCastDelegates.pdb
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_MultiCastDelegates\obj\Debug\net8.0\Demo_MultiCastDelegates.genruntimeconfig.cache
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_MultiCastDelegates\obj\Debug\net8.0\ref\Demo_MultiCastDelegates.dll

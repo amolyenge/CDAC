@@ -1,0 +1,15 @@
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Practice_Basic\bin\Debug\net8.0\Practice_Basic.exe
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Practice_Basic\bin\Debug\net8.0\Practice_Basic.deps.json
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Practice_Basic\bin\Debug\net8.0\Practice_Basic.runtimeconfig.json
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Practice_Basic\bin\Debug\net8.0\Practice_Basic.dll
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Practice_Basic\bin\Debug\net8.0\Practice_Basic.pdb
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Practice_Basic\obj\Debug\net8.0\Practice_Basic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Practice_Basic\obj\Debug\net8.0\Practice_Basic.AssemblyInfoInputs.cache
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Practice_Basic\obj\Debug\net8.0\Practice_Basic.AssemblyInfo.cs
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Practice_Basic\obj\Debug\net8.0\Practice_Basic.csproj.CoreCompileInputs.cache
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Practice_Basic\obj\Debug\net8.0\Practice_Basic.sourcelink.json
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Practice_Basic\obj\Debug\net8.0\Practice_Basic.dll
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Practice_Basic\obj\Debug\net8.0\refint\Practice_Basic.dll
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Practice_Basic\obj\Debug\net8.0\Practice_Basic.pdb
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Practice_Basic\obj\Debug\net8.0\Practice_Basic.genruntimeconfig.cache
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Practice_Basic\obj\Debug\net8.0\ref\Practice_Basic.dll
