@@ -1,0 +1,15 @@
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_Threading_1\bin\Debug\net8.0\Demo_Threading_1.exe
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_Threading_1\bin\Debug\net8.0\Demo_Threading_1.deps.json
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_Threading_1\bin\Debug\net8.0\Demo_Threading_1.runtimeconfig.json
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_Threading_1\bin\Debug\net8.0\Demo_Threading_1.dll
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_Threading_1\bin\Debug\net8.0\Demo_Threading_1.pdb
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_Threading_1\obj\Debug\net8.0\Demo_Threading_1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_Threading_1\obj\Debug\net8.0\Demo_Threading_1.AssemblyInfoInputs.cache
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_Threading_1\obj\Debug\net8.0\Demo_Threading_1.AssemblyInfo.cs
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_Threading_1\obj\Debug\net8.0\Demo_Threading_1.csproj.CoreCompileInputs.cache
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_Threading_1\obj\Debug\net8.0\Demo_Threading_1.sourcelink.json
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_Threading_1\obj\Debug\net8.0\Demo_Threading_1.dll
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_Threading_1\obj\Debug\net8.0\refint\Demo_Threading_1.dll
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_Threading_1\obj\Debug\net8.0\Demo_Threading_1.pdb
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_Threading_1\obj\Debug\net8.0\Demo_Threading_1.genruntimeconfig.cache
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\Demo_Threading_1\obj\Debug\net8.0\ref\Demo_Threading_1.dll
