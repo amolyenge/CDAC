@@ -1,0 +1,10 @@
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\11_A__EF_Filters_Sessions_WebAPI\obj\Debug\net8.0\11_A__EF_Filters_Sessions_WebAPI.csproj.AssemblyReference.cache
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\11_A__EF_Filters_Sessions_WebAPI\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\11_A__EF_Filters_Sessions_WebAPI\obj\Debug\net8.0\11_A__EF_Filters_Sessions_WebAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\11_A__EF_Filters_Sessions_WebAPI\obj\Debug\net8.0\11_A__EF_Filters_Sessions_WebAPI.AssemblyInfoInputs.cache
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\11_A__EF_Filters_Sessions_WebAPI\obj\Debug\net8.0\11_A__EF_Filters_Sessions_WebAPI.AssemblyInfo.cs
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\11_A__EF_Filters_Sessions_WebAPI\obj\Debug\net8.0\11_A__EF_Filters_Sessions_WebAPI.csproj.CoreCompileInputs.cache
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\11_A__EF_Filters_Sessions_WebAPI\obj\Debug\net8.0\11_A__EF_Filters_Sessions_WebAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\11_A__EF_Filters_Sessions_WebAPI\obj\Debug\net8.0\11_A__EF_Filters_Sessions_WebAPI.RazorAssemblyInfo.cache
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\11_A__EF_Filters_Sessions_WebAPI\obj\Debug\net8.0\11_A__EF_Filters_Sessions_WebAPI.RazorAssemblyInfo.cs
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\11_A__EF_Filters_Sessions_WebAPI\obj\Debug\net8.0\11_A__EF_Filters_Sessions_WebAPI.sourcelink.json

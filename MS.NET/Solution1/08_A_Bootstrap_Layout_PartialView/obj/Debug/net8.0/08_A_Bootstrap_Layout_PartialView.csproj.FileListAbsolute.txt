@@ -1,0 +1,9 @@
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\08_A_Bootstrap_Layout_PartialView\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\08_A_Bootstrap_Layout_PartialView\obj\Debug\net8.0\08_A_Bootstrap_Layout_PartialView.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\08_A_Bootstrap_Layout_PartialView\obj\Debug\net8.0\08_A_Bootstrap_Layout_PartialView.AssemblyInfoInputs.cache
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\08_A_Bootstrap_Layout_PartialView\obj\Debug\net8.0\08_A_Bootstrap_Layout_PartialView.AssemblyInfo.cs
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\08_A_Bootstrap_Layout_PartialView\obj\Debug\net8.0\08_A_Bootstrap_Layout_PartialView.csproj.CoreCompileInputs.cache
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\08_A_Bootstrap_Layout_PartialView\obj\Debug\net8.0\08_A_Bootstrap_Layout_PartialView.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\08_A_Bootstrap_Layout_PartialView\obj\Debug\net8.0\08_A_Bootstrap_Layout_PartialView.RazorAssemblyInfo.cache
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\08_A_Bootstrap_Layout_PartialView\obj\Debug\net8.0\08_A_Bootstrap_Layout_PartialView.RazorAssemblyInfo.cs
+C:\Users\IET\Desktop\250845920005\MS.NET\Solution1\08_A_Bootstrap_Layout_PartialView\obj\Debug\net8.0\08_A_Bootstrap_Layout_PartialView.sourcelink.json
