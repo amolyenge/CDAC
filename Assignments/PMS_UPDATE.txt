@@ -1,0 +1,46 @@
+LinkedIn :- https://www.linkedin.com/in/amol-yenge/
+Skype id : -   live:.cid.3b7abc970c5b823a
+Leetcode :- https://leetcode.com/u/amol_2025/
+GitHub :- https://github.com/amolyenge
+
+A) 
+
+1. SELECT QUALIFICATION: COLLEGE PROJECT
+2. DURATION : 2 Months 
+3. GIT REPOSITORY : https://github.com/amolyenge/sit_Project
+
+4. PROJECT DESCRIPTION : A full-stack E-commerce web application developed using Spring Boot and React.js, featuring secure JWT-based authentication, role-based access for Admin and Users, product management, 
+         cart and order processing, online payments via Razorpay, and ratings & reviews. The application follows a layered architecture, ensures secure transactions, and delivers a responsive user experience.
+
+5. PROJECT TITLE : E-Commerce Web Application
+
+6. PLATFORM USED : Java, Spring Boot, Spring Data JPA, Spring Security, JWT, MySQL, React.js, Redux, HTML, CSS, JavaScript, Maven, Git and Razorpay
+
+
+B)
+
+1. SELECT QUALIFICATION: PG DAC 
+2. DURATION : 1 MONTH
+3. GIT REPOSITORY : https://github.com/amolyenge/pgdac_Blogging
+
+4. PROJECT DESCRIPTION : A web-based Blogging Application developed using ASP.NET Web API and React.js, featuring JWT-based authentication and role-based access for Admin and Users. 
+Authenticated users can create, read, and manage blogs with a rich text editor supporting multiple fonts and styles. The application integrates a Generative AI (Gemini API) for grammar correction, 
+allows file uploads with text extraction for blog content, and ensures secure, scalable data handling.
+
+5. PROJECT TITLE : Blogging Web Application
+
+6. PLATFORM USED : ASP.NET Web API, Entity Framework, React.js, Redux, MySQL, JWT, JavaScript, HTML, CSS, Git
+
+
+C)
+
+1. SELECT QUALIFICATION: COLLEGE PROJECT
+2. DURATION : 3 MONTH
+3. GIT REPOSITORY :https://github.com/amolyenge/Online_Food_Microservices
+
+4. PROJECT DESCRIPTION :A backend-only Online Food Delivery application developed using Spring Boot microservices architecture, providing RESTful APIs for user management, restaurant services, and order processing. 
+The system uses JWT-based authentication, service discovery, and API Gateway routing to ensure secure, scalable, and loosely coupled backend services suitable for real-world distributed systems.
+
+5. PROJECT TITLE : Online Food Delivery Microservices (Backend APIs)
+
+6. PLATFORM USED : Java, Spring Boot, Spring Cloud (Eureka), Spring Security, JWT, Spring Data JPA, MySQL, API Gateway, Maven, Git
